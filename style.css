@@ -74,7 +74,7 @@ html,body{background:#0c0e18;overflow-x:clip}
 
 /* ============ 0. STICKY HEADER ============ */
 .lp-header{
-  position:absolute;top:0;left:0;right:0;z-index:9999;
+  position:relative;z-index:9999;
   background:transparent;
   padding:12px 0;
   border-bottom:1px solid transparent;
