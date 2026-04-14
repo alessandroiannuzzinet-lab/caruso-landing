@@ -427,7 +427,7 @@ html,body{background:#0c0e18;overflow-x:hidden}
 }
 
 /* === GALLERY EVENTI (mosaico scattered stile Marketers) === */
-.lp-gal{position:relative;padding:80px 24px;background:#0D1332;overflow:hidden;text-align:center;border-radius:24px;margin:24px 16px}
+.lp-gal{position:relative;padding:80px 24px;background:#142471;overflow:hidden;text-align:center;border-radius:24px;margin:24px 16px}
 .lp-gal-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1200px;margin:0 auto}
 .lp-gal-i{width:100%;border-radius:14px;object-fit:cover;display:block;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .lp-gal-top .lp-gal-i{height:220px}
