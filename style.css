@@ -512,3 +512,17 @@ html,body{background:#0c0e18;overflow-x:hidden}
   .lp-forwho-col{padding:32px 24px}
   .lp-forwho-head{margin-bottom:36px}
 }
+
+/* Row-by-row alignment across YES/NO columns */
+.lp-forwho-col li:nth-child(1){min-height:96px}
+.lp-forwho-col li:nth-child(2){min-height:120px}
+.lp-forwho-col li:nth-child(3){min-height:146px}
+.lp-forwho-col li:nth-child(4){min-height:92px}
+.lp-forwho-col li:nth-child(5){min-height:110px}
+@media(max-width:900px){
+  .lp-forwho-col li:nth-child(1),
+  .lp-forwho-col li:nth-child(2),
+  .lp-forwho-col li:nth-child(3),
+  .lp-forwho-col li:nth-child(4),
+  .lp-forwho-col li:nth-child(5){min-height:auto}
+}
