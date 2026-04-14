@@ -1,9 +1,9 @@
 /* === RESET === */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html,body{background:#0c0e18;overflow-x:hidden}
+html,body{background:#0D1332;overflow-x:hidden}
 .mob-br{display:none}
 .lp{
-  font-family:'Urbanist',sans-serif;color:#fafbff;background:#0c0e18;
+  font-family:'Urbanist',sans-serif;color:#fafbff;background:#0D1332;
   line-height:1.65;overflow-x:hidden;font-size:20px;font-weight:400;
 }
 .lp img{max-width:100%;height:auto;display:block}
@@ -24,13 +24,13 @@ html,body{background:#0c0e18;overflow-x:hidden}
 .lp a.btn:link,
 .lp a.btn:visited{
   display:inline-flex;align-items:center;gap:10px;
-  background:#f7f7f7!important;color:#0c0e18!important;
+  background:#f7f7f7!important;color:#0D1332!important;
   font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;
   padding:16px 36px;border-radius:100px;
   cursor:pointer;transition:all .3s;text-decoration:none!important;
 }
 .lp a.btn:hover,.lp a.btn:active{
-  background:#f1ec49!important;color:#0c0e18!important;
+  background:#f1ec49!important;color:#0D1332!important;
   transform:translateY(-2px);box-shadow:0 8px 24px rgba(241,236,73,.2);
 }
 /* CTA Dark */
@@ -38,7 +38,7 @@ html,body{background:#0c0e18;overflow-x:hidden}
 .lp a.btn-dark:link,
 .lp a.btn-dark:visited{
   display:inline-flex;align-items:center;gap:10px;
-  background:#0c0e18!important;color:#fafbff!important;
+  background:#0D1332!important;color:#fafbff!important;
   font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;
   padding:16px 36px;border-radius:100px;
   cursor:pointer;transition:all .3s;text-decoration:none!important;
@@ -91,7 +91,7 @@ html,body{background:#0c0e18;overflow-x:hidden}
 /* ============ 1. SOCIAL PROOF (inside hero) ============ */
 .lp-top-in{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:24px}
 .lp-av{display:flex}
-.lp-av span{display:block;width:34px;height:34px;border-radius:50%;border:2px solid #142471;background-size:cover;background-position:center;margin-left:-8px;background-color:#0c0e18}
+.lp-av span{display:block;width:34px;height:34px;border-radius:50%;border:2px solid #142471;background-size:cover;background-position:center;margin-left:-8px;background-color:#0D1332}
 .lp-av span:first-child{margin-left:0}
 .lp-av span:nth-child(1){background-image:url('https://i.pravatar.cc/80?img=1')}
 .lp-av span:nth-child(2){background-image:url('https://i.pravatar.cc/80?img=5')}
@@ -136,23 +136,23 @@ html,body{background:#0c0e18;overflow-x:hidden}
 
 /* ============ 5. COSA SCOPRIRAI (white bg) ============ */
 .lp-bul{padding:72px 0;background:#fafbff;border-radius:24px 24px 0 0;margin:0 16px}
-.lp-bul h2{color:#0c0e18}
-.lp-bul p{color:#0c0e18}
-.lp-bul strong{color:#0c0e18}
+.lp-bul h2{color:#0D1332}
+.lp-bul p{color:#0D1332}
+.lp-bul strong{color:#0D1332}
 .lp-ng{display:grid;grid-template-columns:1fr 1fr;gap:32px 48px;margin-top:40px}
 .lp-ni{display:flex;gap:20px;align-items:flex-start}
 .lp-nn{flex-shrink:0;font-size:72px;font-weight:700;line-height:1;color:#bd1a1a}
-.lp-pain h2{color:#0c0e18}
-.lp-pain>div>p{color:#0c0e18}
-.lp-nt{font-size:16px;line-height:1.6;color:#0c0e18;padding-top:8px}
-.lp-nt strong{font-size:17px;display:block;margin-bottom:4px;color:#0c0e18}
+.lp-pain h2{color:#0D1332}
+.lp-pain>div>p{color:#0D1332}
+.lp-nt{font-size:16px;line-height:1.6;color:#0D1332;padding-top:8px}
+.lp-nt strong{font-size:17px;display:block;margin-bottom:4px;color:#0D1332}
 
 /* ============ 6. DIMMI CHE VOCE HAI (white bg continuous) ============ */
 .lp-dimmi{padding:0 0 72px;background:#fafbff;border-radius:0 0 24px 24px;margin:0 16px}
-.lp-dimmi p{color:#0c0e18}
-.lp-dimmi h3{color:#0c0e18}
-.lp-dimmi strong{color:#0c0e18}
-.lp-dimmi em{color:#0c0e18}
+.lp-dimmi p{color:#0D1332}
+.lp-dimmi h3{color:#0D1332}
+.lp-dimmi strong{color:#0D1332}
+.lp-dimmi em{color:#0D1332}
 
 /* ============ 7. STATS BAR ============ */
 .lp-stats{padding:56px 0;background:#0e1535;border-radius:24px;margin:0 16px}
@@ -183,13 +183,13 @@ html,body{background:#0c0e18;overflow-x:hidden}
 .lp-pain{padding:80px 0;background:#f5f5f5;border-radius:24px;margin:0 16px}
 .lp-pain-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:40px}
 .lp-pain-card{
-  background:#fafbff;border:1.5px solid #0c0e18;border-radius:20px;padding:28px 20px;transition:all .3s;
+  background:#fafbff;border:1.5px solid #0D1332;border-radius:20px;padding:28px 20px;transition:all .3s;
 }
 .lp-pain-card:hover,.lp-pain-card:active{transform:scale(1.03);background:#bd1a1a;border-color:#bd1a1a;color:#fafbff}
 .lp-pain-card:hover h4,.lp-pain-card:active h4,.lp-pain-card:hover p,.lp-pain-card:active p,.lp-pain-card:hover p strong,.lp-pain-card:active p strong{color:#fafbff}
 .lp-pain-card:hover .lp-pain-icon svg,.lp-pain-card:active .lp-pain-icon svg{stroke:#fafbff}
 .lp-pain-icon{margin-bottom:18px}
-.lp-pain-icon svg{width:32px;height:32px;fill:none;stroke:#0c0e18;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.lp-pain-icon svg{width:32px;height:32px;fill:none;stroke:#0D1332;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 /* Animated icons */
 .lp-pain-card:nth-child(1) .lp-pain-icon svg{animation:pulse-wave 2s ease-in-out infinite}
 @keyframes pulse-wave{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
@@ -203,9 +203,9 @@ html,body{background:#0c0e18;overflow-x:hidden}
 /* Card 4: arrow rising */
 .lp-pain-card:nth-child(4) .lp-pain-icon svg{animation:rise-arrow 2s ease-in-out infinite}
 @keyframes rise-arrow{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-.lp-pain-card h4{font-size:30px;font-weight:600;margin-bottom:10px;line-height:1.3;color:#0c0e18}
-.lp-pain-card p{font-size:20px;line-height:1.6;color:#0c0e18}
-.lp-pain-card p strong{color:#0c0e18}
+.lp-pain-card h4{font-size:30px;font-weight:600;margin-bottom:10px;line-height:1.3;color:#0D1332}
+.lp-pain-card p{font-size:20px;line-height:1.6;color:#0D1332}
+.lp-pain-card p strong{color:#0D1332}
 
 /* ============ 10. METODO ============ */
 .lp-met{padding:72px 0}
@@ -223,7 +223,7 @@ html,body{background:#0c0e18;overflow-x:hidden}
 
 /* ============ 11. REVIEWS (white bg) ============ */
 .lp-rev{padding:72px 0;background:#fafbff;border-radius:24px 24px 0 0;margin:0 16px}
-.lp-rev h2{color:#0c0e18}
+.lp-rev h2{color:#0D1332}
 .lp-rev p{color:rgba(12,18,50,.55)}
 
 /* ============ 12. 3 CARD (original colored design) ============ */
@@ -246,10 +246,10 @@ html,body{background:#0c0e18;overflow-x:hidden}
 .lp-card:nth-child(1) .lp-card-bg{background:linear-gradient(to top,#142471 30%,transparent 100%)}
 .lp-card:nth-child(2){background:#bd1a1a}
 .lp-card:nth-child(2) .lp-card-bg{background:linear-gradient(to top,#bd1a1a 30%,transparent 100%)}
-.lp-card:nth-child(3){background:#f1ec49;color:#0c0e18!important}
+.lp-card:nth-child(3){background:#f1ec49;color:#0D1332!important}
 .lp-card:nth-child(3) .lp-card-bg{background:linear-gradient(to top,#f1ec49 30%,transparent 100%)}
-.lp-card:nth-child(3) h4,.lp-card:nth-child(3) p,.lp-card:nth-child(3) .lp-card-label{color:#0c0e18!important}
-.lp-card:nth-child(3) .lp-card-cta{color:#0c0e18!important;border-color:rgba(12,18,50,.2)!important}
+.lp-card:nth-child(3) h4,.lp-card:nth-child(3) p,.lp-card:nth-child(3) .lp-card-label{color:#0D1332!important}
+.lp-card:nth-child(3) .lp-card-cta{color:#0D1332!important;border-color:rgba(12,18,50,.2)!important}
 .lp-card-img{position:absolute;top:0;left:0;right:0;bottom:0;z-index:0}
 .lp-card-img img{width:85%;height:85%;object-fit:cover;object-position:top;position:absolute;bottom:0;right:0}
 .lp-card-bg{position:absolute;bottom:0;left:0;right:0;height:70%;z-index:1}
@@ -287,7 +287,7 @@ html,body{background:#0c0e18;overflow-x:hidden}
 }
 .lp-modal-overlay.active{display:flex}
 .lp-modal{
-  background:#0c0e18;border:1px solid rgba(250,251,255,.1);border-radius:20px;
+  background:#0D1332;border:1px solid rgba(250,251,255,.1);border-radius:20px;
   max-width:720px;width:100%;max-height:80vh;overflow-y:auto;padding:48px 40px;
   position:relative;
 }
@@ -390,7 +390,7 @@ html,body{background:#0c0e18;overflow-x:hidden}
 }
 
 /* === PERCHE IL TEST (sticky photo right) === */
-.lp-why{padding:88px 0;background:#0c0e18;color:#fafbff}
+.lp-why{padding:88px 0;background:#0D1332;color:#fafbff}
 .lp-why .w{max-width:1200px}
 .lp-why-grid{display:grid;grid-template-columns:1fr 380px;gap:64px;align-items:start}
 .lp-why-copy h2{font-family:Urbanist,sans-serif;font-weight:600;font-size:clamp(28px,3.5vw,42px);line-height:1.15}
@@ -399,7 +399,7 @@ html,body{background:#0c0e18;overflow-x:hidden}
 .lp-why-copy em{color:rgba(255,255,255,.75)}
 .lp-why-list{margin:18px 0 22px;padding-left:22px;line-height:1.7;color:rgba(255,255,255,.85)}
 .lp-why-list li{margin:8px 0;font-size:18px}
-.lp-why-copy .lp-hl{background:#f1ec49;color:#0c0e18;padding:14px 18px;border-radius:10px;font-weight:600;display:inline-block;margin:18px 0}
+.lp-why-copy .lp-hl{background:#f1ec49;color:#0D1332;padding:14px 18px;border-radius:10px;font-weight:600;display:inline-block;margin:18px 0}
 .lp-why-img-wrap{position:relative;height:100%}
 .lp-why-img{position:sticky;top:32px;border-radius:20px;overflow:hidden;aspect-ratio:16/10;box-shadow:0 20px 60px rgba(0,0,0,.4)}
 .lp-why-img img{width:100%;height:100%;object-fit:cover;display:block}
@@ -411,12 +411,12 @@ html,body{background:#0c0e18;overflow-x:hidden}
 }
 
 /* === PERCHE VUOI MIGLIORARE (descrittiva, 3 colonne) === */
-.lp-why2{padding:80px 0;background:#0c0e18;color:#fafbff}
+.lp-why2{padding:80px 0;background:#0D1332;color:#fafbff}
 .lp-why2 h2{font-family:Urbanist,sans-serif;font-weight:600;font-size:clamp(28px,3.5vw,42px);margin-bottom:48px}
 .lp-why2-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
 .lp-why2-item{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:32px 28px;transition:all .25s ease}
 .lp-why2-item:hover{background:rgba(255,255,255,.07);border-color:#f1ec49;transform:translateY(-4px)}
-.lp-why2-letter{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:#f1ec49;color:#0c0e18;font-family:Urbanist,sans-serif;font-weight:700;font-size:24px;margin-bottom:20px}
+.lp-why2-letter{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:#f1ec49;color:#0D1332;font-family:Urbanist,sans-serif;font-weight:700;font-size:24px;margin-bottom:20px}
 .lp-why2-item p{font-size:17px;line-height:1.55;color:rgba(255,255,255,.92);margin:8px 0}
 .lp-why2-item p strong{color:#fafbff;font-weight:600}
 .lp-why2-sub{font-size:15px!important;color:rgba(255,255,255,.6)!important;font-style:italic}
@@ -427,7 +427,7 @@ html,body{background:#0c0e18;overflow-x:hidden}
 }
 
 /* === GALLERY EVENTI (mosaico scattered stile Marketers) === */
-.lp-gal{position:relative;padding:80px 20px;background:#0c0e18;overflow:hidden;text-align:center;mask-image:linear-gradient(to bottom,transparent 0%,black 12%,black 88%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 12%,black 88%,transparent 100%)}
+.lp-gal{position:relative;padding:80px 20px;background:#0D1332;overflow:hidden;text-align:center;mask-image:linear-gradient(to bottom,transparent 0%,black 12%,black 88%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 12%,black 88%,transparent 100%)}
 .lp-gal-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1200px;margin:0 auto}
 .lp-gal-i{width:100%;border-radius:14px;object-fit:cover;display:block;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .lp-gal-top .lp-gal-i{height:220px}
