@@ -499,8 +499,8 @@ html,body{background:#0c0e18;overflow-x:hidden}
 .lp-forwho-head h2 strong{font-weight:600;color:#142471;position:relative;white-space:nowrap}
 .lp-forwho-head h2 strong::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:3px;background:#f1ec49;border-radius:2px}
 .lp-forwho-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.lp-forwho-col{position:relative;background:#fafbff;border:1px solid rgba(12,14,24,.06);border-radius:20px;padding:44px 40px;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;box-shadow:0 4px 24px rgba(12,14,24,.06),0 1px 2px rgba(12,14,24,.04)}
-.lp-forwho-col:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(12,14,24,.12),0 4px 12px rgba(12,14,24,.06)}
+.lp-forwho-col{position:relative;background:#fafbff;border:1px solid rgba(12,14,24,.1);border-radius:20px;padding:44px 40px;transition:transform .3s ease,border-color .3s ease}
+.lp-forwho-col:hover{transform:translateY(-6px)}
 .lp-forwho-col.yes{border-top:4px solid #142471}
 .lp-forwho-col.no{border-top:4px solid #bd1a1a}
 .lp-forwho-col.yes:hover{border-color:rgba(20,36,113,.5);border-top-color:#142471}
