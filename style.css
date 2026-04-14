@@ -476,34 +476,35 @@ html,body{background:#0c0e18;overflow-x:hidden}
 
 .lp-gal-badge:hover{background:rgba(255,255,255,.18);transform:translateY(-1px);transition:all .2s}
 
-/* === PER CHI È / NON È — premium design === */
-.lp-forwho{padding:96px 16px;background:#0c0e18;position:relative;overflow:hidden}
-.lp-forwho .w{position:relative;z-index:1}
-.lp-forwho-head{text-align:center;margin-bottom:56px;max-width:680px;margin-left:auto;margin-right:auto}
-.lp-forwho-kicker{display:inline-block;font-size:12px;font-weight:500;color:#f1ec49;letter-spacing:.24em;text-transform:uppercase;margin-bottom:18px;padding:6px 14px;border:1px solid rgba(241,236,73,.35);border-radius:100px}
+
+
+/* === PER CHI È / NON È — brand premium === */
+.lp-forwho{padding:96px 24px;background:#142471;border-radius:24px;margin:24px 16px;position:relative;overflow:hidden}
+.lp-forwho .w{position:relative;z-index:1;max-width:1100px}
+.lp-forwho-head{text-align:center;margin-bottom:56px;max-width:720px;margin-left:auto;margin-right:auto}
+.lp-forwho-kicker{display:inline-block;font-size:12px;font-weight:500;color:#0c0e18;letter-spacing:.24em;text-transform:uppercase;margin-bottom:22px;padding:7px 16px;background:#f1ec49;border-radius:100px}
 .lp-forwho-head h2{font-family:Urbanist,sans-serif;font-weight:500;font-size:clamp(30px,4vw,46px);line-height:1.15;color:#fafbff;letter-spacing:-.01em}
-.lp-forwho-head h2 br{display:block}
-.lp-forwho-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1100px;margin:0 auto}
-.lp-forwho-col{position:relative;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.08);border-radius:24px;padding:44px 40px;transition:border-color .3s ease,transform .3s ease}
-.lp-forwho-col.yes{border-top:3px solid #f1ec49}
-.lp-forwho-col.no{border-top:3px solid #bd1a1a}
-.lp-forwho-col:hover{transform:translateY(-4px)}
-.lp-forwho-col.yes:hover{border-color:rgba(241,236,73,.35)}
-.lp-forwho-col.no:hover{border-color:rgba(189,26,26,.35)}
-.lp-forwho-badge{display:inline-flex;align-items:center;gap:10px;padding:10px 18px;border-radius:100px;font-size:13px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:26px}
-.lp-forwho-badge.yes{background:rgba(241,236,73,.1);color:#f1ec49;border:1px solid rgba(241,236,73,.3)}
-.lp-forwho-badge.no{background:rgba(189,26,26,.1);color:#ff6b6b;border:1px solid rgba(189,26,26,.35)}
+.lp-forwho-head h2 strong{font-weight:600;color:#f1ec49}
+.lp-forwho-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.lp-forwho-col{position:relative;background:#fafbff;border-radius:20px;padding:44px 40px;transition:transform .3s ease,box-shadow .3s ease;box-shadow:0 10px 40px rgba(0,0,0,.15)}
+.lp-forwho-col:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.lp-forwho-col.yes::before{content:"";position:absolute;top:0;left:40px;right:40px;height:4px;background:#f1ec49;border-radius:0 0 4px 4px}
+.lp-forwho-col.no::before{content:"";position:absolute;top:0;left:40px;right:40px;height:4px;background:#bd1a1a;border-radius:0 0 4px 4px}
+.lp-forwho-badge{display:inline-flex;align-items:center;gap:10px;padding:9px 18px;border-radius:100px;font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;margin-bottom:28px}
+.lp-forwho-badge.yes{background:#0c0e18;color:#f1ec49}
+.lp-forwho-badge.no{background:#0c0e18;color:#bd1a1a}
 .lp-forwho-col ul{list-style:none;padding:0;margin:0}
-.lp-forwho-col li{position:relative;padding:18px 0 18px 32px;color:rgba(255,255,255,.82);font-size:16px;line-height:1.55;font-weight:300;border-bottom:1px solid rgba(255,255,255,.06)}
+.lp-forwho-col li{position:relative;padding:18px 0 18px 34px;color:#0c0e18;font-size:16px;line-height:1.55;font-weight:300;border-bottom:1px solid rgba(12,14,24,.08)}
 .lp-forwho-col li:last-child{border-bottom:0}
-.lp-forwho-col li strong{color:#fafbff;font-weight:500}
-.lp-forwho-col li em{color:rgba(255,255,255,.65);font-style:italic;font-weight:300}
-.lp-forwho-col li::before{position:absolute;left:0;top:22px;width:20px;height:20px;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:11px;font-weight:600;line-height:1}
-.lp-forwho-col.yes li::before{content:"✓";background:rgba(241,236,73,.15);color:#f1ec49;border:1px solid rgba(241,236,73,.4)}
-.lp-forwho-col.no li::before{content:"✕";background:rgba(189,26,26,.15);color:#ff6b6b;border:1px solid rgba(189,26,26,.4)}
+.lp-forwho-col li strong{color:#0c0e18;font-weight:500}
+.lp-forwho-col li em{color:rgba(12,14,24,.55);font-style:italic;font-weight:300}
+.lp-forwho-col li::before{position:absolute;left:0;top:20px;width:22px;height:22px;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:12px;font-weight:600;line-height:1}
+.lp-forwho-col.yes li::before{content:"✓";background:#f1ec49;color:#0c0e18}
+.lp-forwho-col.no li::before{content:"✕";background:#bd1a1a;color:#fafbff}
 @media(max-width:900px){
-  .lp-forwho{padding:64px 12px}
+  .lp-forwho{padding:56px 16px;margin:24px 12px}
   .lp-forwho-grid{grid-template-columns:1fr;gap:16px}
   .lp-forwho-col{padding:32px 24px}
+  .lp-forwho-col::before{left:24px;right:24px}
   .lp-forwho-head{margin-bottom:36px}
 }
