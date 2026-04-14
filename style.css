@@ -491,20 +491,20 @@ html,body{background:#0c0e18;overflow-x:hidden}
 .lp-forwho-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .lp-forwho-col{position:relative;background:#fafbff;border:1px solid rgba(12,14,24,.06);border-radius:20px;padding:44px 40px;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;box-shadow:0 4px 24px rgba(12,14,24,.06),0 1px 2px rgba(12,14,24,.04)}
 .lp-forwho-col:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(12,14,24,.12),0 4px 12px rgba(12,14,24,.06)}
-.lp-forwho-col.yes{border-top:4px solid #f1ec49}
+.lp-forwho-col.yes{border-top:4px solid #142471}
 .lp-forwho-col.no{border-top:4px solid #bd1a1a}
-.lp-forwho-col.yes:hover{border-color:rgba(241,236,73,.6);border-top-color:#f1ec49}
+.lp-forwho-col.yes:hover{border-color:rgba(20,36,113,.5);border-top-color:#142471}
 .lp-forwho-col.no:hover{border-color:rgba(189,26,26,.4);border-top-color:#bd1a1a}
 .lp-forwho-badge{display:inline-flex;align-items:center;gap:10px;padding:9px 18px;border-radius:100px;font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;margin-bottom:28px}
-.lp-forwho-badge.yes{background:#0c0e18;color:#f1ec49}
-.lp-forwho-badge.no{background:#0c0e18;color:#bd1a1a}
+.lp-forwho-badge.yes{background:#142471;color:#fafbff}
+.lp-forwho-badge.no{background:#bd1a1a;color:#fafbff}
 .lp-forwho-col ul{list-style:none;padding:0;margin:0}
-.lp-forwho-col li{position:relative;padding:18px 0 18px 34px;color:#0c0e18;font-size:16px;line-height:1.55;font-weight:300;border-bottom:1px solid rgba(12,14,24,.08)}
+.lp-forwho-col li{position:relative;padding:18px 0;padding-left:34px;color:#0c0e18;font-size:16px;line-height:1.55;font-weight:300;border-bottom:1px solid rgba(12,14,24,.08);min-height:48px}
 .lp-forwho-col li:last-child{border-bottom:0}
 .lp-forwho-col li strong{color:#0c0e18;font-weight:500}
 .lp-forwho-col li em{color:rgba(12,14,24,.55);font-style:italic;font-weight:300}
-.lp-forwho-col li::before{position:absolute;left:0;top:20px;width:22px;height:22px;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:12px;font-weight:600;line-height:1}
-.lp-forwho-col.yes li::before{content:"✓";background:#f1ec49;color:#0c0e18}
+.lp-forwho-col li::before{position:absolute;left:0;top:20px;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;font-size:12px;font-weight:600;line-height:1;flex-shrink:0}
+.lp-forwho-col.yes li::before{content:"✓";background:#142471;color:#fafbff}
 .lp-forwho-col.no li::before{content:"✕";background:#bd1a1a;color:#fafbff}
 @media(max-width:900px){
   .lp-forwho{padding:56px 16px;margin:24px 12px}
