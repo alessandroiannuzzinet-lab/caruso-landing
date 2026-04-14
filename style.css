@@ -388,3 +388,24 @@ html,body{background:#0c0e18;overflow-x:hidden}
 @media(max-width:480px){
   .lp-pain-grid{grid-template-columns:1fr}
 }
+
+/* === PERCHE IL TEST (sticky photo right) === */
+.lp-why{padding:88px 0;background:#0c0e18;color:#fafbff}
+.lp-why .w{max-width:1200px}
+.lp-why-grid{display:grid;grid-template-columns:1fr 380px;gap:64px;align-items:start}
+.lp-why-copy h2{font-family:Urbanist,sans-serif;font-weight:600;font-size:clamp(28px,3.5vw,42px);line-height:1.15}
+.lp-why-copy p{font-size:18px;line-height:1.65;margin:14px 0;color:rgba(255,255,255,.85)}
+.lp-why-copy strong{color:#fafbff}
+.lp-why-copy em{color:rgba(255,255,255,.75)}
+.lp-why-list{margin:18px 0 22px;padding-left:22px;line-height:1.7;color:rgba(255,255,255,.85)}
+.lp-why-list li{margin:8px 0;font-size:18px}
+.lp-why-copy .lp-hl{background:#f1ec49;color:#0c0e18;padding:14px 18px;border-radius:10px;font-weight:600;display:inline-block;margin:18px 0}
+.lp-why-img-wrap{position:relative;height:100%}
+.lp-why-img{position:sticky;top:32px;border-radius:20px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.lp-why-img img{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width:900px){
+  .lp-why{padding:56px 0}
+  .lp-why-grid{grid-template-columns:1fr;gap:32px}
+  .lp-why-img-wrap{order:-1}
+  .lp-why-img{position:static;max-width:420px;margin:0 auto}
+}
