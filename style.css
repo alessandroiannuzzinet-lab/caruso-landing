@@ -453,7 +453,7 @@ html,body{background:#0c0e18;overflow-x:hidden}
   .lp-gal-mid{margin:24px auto;padding:20px 12px}
 }
 
-.lp-gal-i{transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s ease}
+.lp-gal-i{transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s ease,filter .5s ease;filter:grayscale(100%)}
 .lp-gal-i1:hover{transform:translateY(10px) scale(1.08) rotate(-2deg);z-index:5}
 .lp-gal-i2:hover{transform:translateY(-25px) scale(1.08) rotate(2deg);z-index:5}
 .lp-gal-i3:hover{transform:translateY(25px) scale(1.08) rotate(-2deg);z-index:5}
