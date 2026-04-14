@@ -1,10 +1,10 @@
 /* === RESET === */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html,body{background:#0c0e18;overflow-x:hidden}
+html,body{background:#0c0e18;overflow-x:clip}
 .mob-br{display:none}
 .lp{
   font-family:'Urbanist',sans-serif;color:#fafbff;background:#0c0e18;
-  line-height:1.65;overflow-x:hidden;font-size:20px;font-weight:300;
+  line-height:1.65;overflow-x:clip;font-size:20px;font-weight:300;
 }
 .lp img{max-width:100%;height:auto;display:block}
 .lp a{text-decoration:none;color:inherit}
@@ -74,18 +74,20 @@ html,body{background:#0c0e18;overflow-x:hidden}
 
 /* ============ 0. STICKY HEADER ============ */
 .lp-header{
-  position:sticky;top:0;z-index:9999;
+  position:absolute;top:0;left:0;right:0;z-index:9999;
   background:transparent;
   padding:12px 0;
-  transition:background .3s ease,backdrop-filter .3s ease,padding .3s ease,border-color .3s ease;
   border-bottom:1px solid transparent;
 }
 .lp-header.scrolled{
-  background:rgba(12,14,24,.9);
+  position:fixed;top:0;left:0;right:0;
+  background:rgba(12,14,24,.92);
   backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
   padding:10px 0;
   border-bottom-color:rgba(255,255,255,.1);
+  animation:hdrDrop .35s ease forwards;
 }
+@keyframes hdrDrop{from{transform:translateY(-100%);opacity:0}to{transform:translateY(0);opacity:1}}
 .lp-header.scrolled .lp-header-logo img{height:44px;transition:height .3s ease}
 .lp-header-logo img{transition:height .3s ease}
 .lp-header-in{
