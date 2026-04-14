@@ -542,5 +542,14 @@ document.querySelectorAll('a[href^="#"]').forEach(function(a) {
 });
 </script>
 
+
+<script id="header-scroll-observer">
+(function(){
+  var h=document.querySelector('.lp-header');
+  if(!h)return;
+  function update(){if(window.scrollY>80)h.classList.add('scrolled');else h.classList.remove('scrolled')}
+  update();window.addEventListener('scroll',update,{passive:true});
+})();
+</script>
 </body>
 </html>
