@@ -526,3 +526,12 @@ html,body{background:#0c0e18;overflow-x:hidden}
   .lp-forwho-col li:nth-child(4),
   .lp-forwho-col li:nth-child(5){min-height:auto}
 }
+
+/* Eq icon color = hover color del bottone, fisso sempre */
+.lp a.btn .eq i{background:#f1ec49}
+.lp a.btn-dark .eq i{background:#bd1a1a}
+.lp a.btn-red .eq i{background:#9a1515}
+/* La hover cambia il bg del bottone → rendiamo le barre visibili anche in hover */
+.lp a.btn:hover .eq i{background:#0c0e18}
+.lp a.btn-dark:hover .eq i{background:#fafbff}
+.lp a.btn-red:hover .eq i{background:#fafbff}
