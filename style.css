@@ -211,17 +211,12 @@ html,body{background:#0c0e18;overflow-x:hidden}
 
 /* ============ 10. METODO ============ */
 .lp-met{padding:112px 0 96px;position:relative;overflow:hidden;background:#0c0e18}
-.lp-met::before{content:"";position:absolute;inset:0 -20%;background:url('img/soundwave.svg') center/cover repeat-x;opacity:.35;pointer-events:none;z-index:0;animation:sw-pan 60s linear infinite;mix-blend-mode:screen}
 @keyframes sw-pan{0%{transform:translateX(0)}100%{transform:translateX(-15%)}}
-@media (prefers-reduced-motion:reduce){.lp-met::before{animation:none}}
 .lp-met .w{position:relative;z-index:1}
 .lp-met h2::after{content:"";display:block;width:48px;height:2px;background:#f1ec49;margin:20px auto 0;border-radius:2px}
 .lp-3s{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin:56px 0;position:relative}
-.lp-3s::before{content:"";position:absolute;top:120px;left:20%;right:20%;height:1px;background:rgba(241,236,73,.2);z-index:0}
-.lp-3si{text-align:center;padding:48px 28px 36px;position:relative;background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.08);border-radius:20px;transition:all .4s cubic-bezier(.2,.8,.2,1);overflow:hidden}
-.lp-3si:hover{transform:translateY(-6px);border-color:rgba(241,236,73,.35);box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.lp-3si{text-align:center;padding:48px 28px 36px;position:relative}
 .lp-3si-num{font-size:108px;font-weight:700;line-height:.95;color:#f1ec49;margin-bottom:20px;letter-spacing:-.04em;filter:drop-shadow(0 0 20px rgba(241,236,73,.2));transition:filter .4s}
-.lp-3si:hover .lp-3si-num{filter:drop-shadow(0 0 40px rgba(241,236,73,.5))}
 .lp-3si-badge{
   display:inline-block;background:#142471;color:#fafbff;
   font-size:12px;font-weight:600;padding:4px 14px;border-radius:100px;
@@ -438,7 +433,9 @@ html,body{background:#0c0e18;overflow-x:hidden}
 
 /* === GALLERY EVENTI (mosaico scattered stile Marketers) === */
 .lp-gal{position:relative;padding:80px 24px;background:#142471;overflow:hidden;text-align:center;border-radius:24px;margin:24px 16px}
-.lp-gal-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1200px;margin:0 auto}
+.lp-gal::after{content:"";position:absolute;inset:0 -20%;background:url('img/soundwave.svg') center/cover repeat-x;opacity:.22;pointer-events:none;z-index:0;animation:sw-pan 80s linear infinite;mix-blend-mode:screen}
+@media (prefers-reduced-motion:reduce){.lp-gal::after{animation:none}}
+.lp-gal-row{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1200px;margin:0 auto}
 .lp-gal-i{width:100%;border-radius:14px;object-fit:cover;display:block;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .lp-gal-top .lp-gal-i{height:220px}
 .lp-gal-bot .lp-gal-i{height:200px}
