@@ -31,7 +31,7 @@ html,body{background:#0c0e18;overflow-x:hidden}
 }
 .lp a.btn:hover,.lp a.btn:active{
   background:#f1ec49!important;color:#0c0e18!important;
-  transform:translateY(-2px);box-shadow:0 8px 24px rgba(241,236,73,.2);
+  transform:translateY(-2px);
 }
 /* CTA Dark */
 .lp a.btn-dark,
@@ -45,7 +45,7 @@ html,body{background:#0c0e18;overflow-x:hidden}
 }
 .lp a.btn-dark:hover,.lp a.btn-dark:active{
   background:#bd1a1a!important;color:#fafbff!important;
-  transform:translateY(-2px);box-shadow:0 8px 24px rgba(189,26,26,.3);
+  transform:translateY(-2px);
 }
 /* CTA Red (header) */
 .lp a.btn-red,
@@ -59,7 +59,7 @@ html,body{background:#0c0e18;overflow-x:hidden}
 }
 .lp a.btn-red:hover,.lp a.btn-red:active{
   background:#9a1515!important;
-  transform:translateY(-1px);box-shadow:0 4px 16px rgba(189,26,26,.3);
+  transform:translateY(-1px);
 }
 
 /* Eq icon */
