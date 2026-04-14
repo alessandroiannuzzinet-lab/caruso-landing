@@ -450,7 +450,7 @@ html,body{background:#0c0e18;overflow-x:hidden}
 .lp-gal-mid{position:relative;z-index:10;max-width:720px;margin:32px auto;padding:32px 24px;color:#fafbff}
 .lp-gal-mid h2{font-family:Urbanist,sans-serif;font-weight:600;font-size:clamp(28px,3.5vw,42px);margin-bottom:16px;line-height:1.15}
 .lp-gal-mid p{font-size:18px;line-height:1.6;color:rgba(255,255,255,.8);margin-bottom:24px}
-.lp-gal-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid #fafbff;color:#fafbff;padding:10px 20px;border-radius:100px;font-weight:600;font-size:14px;letter-spacing:.5px}
+.lp-gal-badge{text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid #fafbff;color:#fafbff;padding:10px 20px;border-radius:100px;font-weight:600;font-size:14px;letter-spacing:.5px}
 .lp-gal-badge::before{content:"●";color:#fafbff}
 @media (max-width:900px){
   .lp-gal{padding:56px 12px}
@@ -473,3 +473,5 @@ html,body{background:#0c0e18;overflow-x:hidden}
 
 /* Body italic: only Urbanist Light 300 italic */
 .lp p em, .lp-why-copy em, .lp-gal-mid em{font-weight:300;font-style:italic}
+
+.lp-gal-badge:hover{background:rgba(255,255,255,.18);transform:translateY(-1px);transition:all .2s}
