@@ -481,7 +481,7 @@ html,body{background:#0c0e18;overflow-x:hidden}
 
 
 /* === PER CHI È / NON È — invertito, bg bianco === */
-.lp-forwho{padding:96px 24px;background:#fafbff;border-radius:24px;margin:24px 16px;position:relative;overflow:hidden}
+.lp-forwho{padding:96px 24px;background:#f5f5f5;border-radius:24px;margin:-48px 16px 24px;position:relative;overflow:hidden;z-index:2;box-shadow:0 -20px 40px rgba(0,0,0,.15)}
 .lp-forwho .w{position:relative;z-index:1;max-width:1100px}
 .lp-forwho-head{text-align:center;margin-bottom:56px;max-width:720px;margin-left:auto;margin-right:auto}
 .lp-forwho-kicker{display:inline-block;font-size:12px;font-weight:500;color:#fafbff;letter-spacing:.24em;text-transform:uppercase;margin-bottom:22px;padding:7px 16px;background:#0c0e18;border-radius:100px}
@@ -489,8 +489,8 @@ html,body{background:#0c0e18;overflow-x:hidden}
 .lp-forwho-head h2 strong{font-weight:600;color:#142471;position:relative;white-space:nowrap}
 .lp-forwho-head h2 strong::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:3px;background:#f1ec49;border-radius:2px}
 .lp-forwho-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.lp-forwho-col{position:relative;background:#fafbff;border:1px solid rgba(12,14,24,.1);border-radius:20px;padding:44px 40px;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
-.lp-forwho-col:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,.08)}
+.lp-forwho-col{position:relative;background:#fafbff;border:1px solid rgba(12,14,24,.06);border-radius:20px;padding:44px 40px;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;box-shadow:0 4px 24px rgba(12,14,24,.06),0 1px 2px rgba(12,14,24,.04)}
+.lp-forwho-col:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(12,14,24,.12),0 4px 12px rgba(12,14,24,.06)}
 .lp-forwho-col.yes{border-top:4px solid #f1ec49}
 .lp-forwho-col.no{border-top:4px solid #bd1a1a}
 .lp-forwho-col.yes:hover{border-color:rgba(241,236,73,.6);border-top-color:#f1ec49}
