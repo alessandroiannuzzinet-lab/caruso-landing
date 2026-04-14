@@ -401,7 +401,7 @@ html,body{background:#0c0e18;overflow-x:hidden}
 .lp-why-list li{margin:8px 0;font-size:18px}
 .lp-why-copy .lp-hl{background:#f1ec49;color:#0c0e18;padding:14px 18px;border-radius:10px;font-weight:600;display:inline-block;margin:18px 0}
 .lp-why-img-wrap{position:relative;height:100%}
-.lp-why-img{position:sticky;top:32px;border-radius:20px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.lp-why-img{position:sticky;top:32px;border-radius:20px;overflow:hidden;aspect-ratio:16/10;box-shadow:0 20px 60px rgba(0,0,0,.4)}
 .lp-why-img img{width:100%;height:100%;object-fit:cover;display:block}
 @media (max-width:900px){
   .lp-why{padding:56px 0}
