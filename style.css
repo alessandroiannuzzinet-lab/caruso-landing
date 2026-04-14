@@ -409,3 +409,19 @@ html,body{background:#0c0e18;overflow-x:hidden}
   .lp-why-img-wrap{order:-1}
   .lp-why-img{position:static;max-width:420px;margin:0 auto}
 }
+
+/* === PERCHE VUOI MIGLIORARE (descrittiva, 3 colonne) === */
+.lp-why2{padding:80px 0;background:#0c0e18;color:#fafbff}
+.lp-why2 h2{font-family:Urbanist,sans-serif;font-weight:600;font-size:clamp(28px,3.5vw,42px);margin-bottom:48px}
+.lp-why2-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.lp-why2-item{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:32px 28px;transition:all .25s ease}
+.lp-why2-item:hover{background:rgba(255,255,255,.07);border-color:#f1ec49;transform:translateY(-4px)}
+.lp-why2-letter{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:#f1ec49;color:#0c0e18;font-family:Urbanist,sans-serif;font-weight:700;font-size:24px;margin-bottom:20px}
+.lp-why2-item p{font-size:17px;line-height:1.55;color:rgba(255,255,255,.92);margin:8px 0}
+.lp-why2-item p strong{color:#fafbff;font-weight:600}
+.lp-why2-sub{font-size:15px!important;color:rgba(255,255,255,.6)!important;font-style:italic}
+@media (max-width:900px){
+  .lp-why2{padding:56px 0}
+  .lp-why2-grid{grid-template-columns:1fr;gap:20px}
+  .lp-why2 h2{margin-bottom:28px}
+}
