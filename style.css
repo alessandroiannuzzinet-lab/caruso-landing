@@ -433,7 +433,7 @@ html,body{background:#0c0e18;overflow-x:hidden}
 
 /* === GALLERY EVENTI (mosaico scattered stile Marketers) === */
 .lp-gal{position:relative;padding:80px 24px;background:#142471;overflow:hidden;text-align:center;border-radius:24px;margin:24px 16px}
-.lp-gal::after{content:"";position:absolute;top:50%;left:-20%;right:-20%;height:300px;transform:translateY(-50%);background:url('img/soundwave.svg') left center/auto 300px repeat-x;opacity:.3;pointer-events:none;z-index:0;animation:sw-slide 40s linear infinite;mix-blend-mode:screen}
+.lp-gal::after{content:"";position:absolute;top:50%;left:-20%;right:-20%;height:300px;transform:translateY(-50%);background:url('img/soundwave.svg') left center/auto 300px repeat-x;opacity:.3;pointer-events:none;z-index:0;animation:sw-slide 70s linear infinite;mix-blend-mode:screen}
 @media (prefers-reduced-motion:reduce){.lp-gal::after{animation:none}}
 .lp-gal-row{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:1200px;margin:0 auto}
 .lp-gal-i{width:100%;border-radius:14px;object-fit:cover;display:block;box-shadow:0 10px 30px rgba(0,0,0,.35)}
