@@ -592,3 +592,10 @@ html,body{background:#0c0e18;overflow-x:hidden}
   .lp-forwho{margin:-32px 12px 16px!important;padding:48px 16px!important}
   .lp-pain-grid{grid-template-columns:1fr!important;gap:10px}
 }
+
+.cta-short{display:none}
+.cta-full{display:inline}
+@media(max-width:768px){
+  .cta-full{display:none}
+  .cta-short{display:inline}
+}
