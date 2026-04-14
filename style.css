@@ -210,22 +210,29 @@ html,body{background:#0c0e18;overflow-x:hidden}
 .lp-pain-card p strong{color:#0c0e18}
 
 /* ============ 10. METODO ============ */
-.lp-met{padding:72px 0;position:relative;overflow:hidden}
-.lp-met::before{content:"";position:absolute;inset:0 -20%;background:url('img/soundwave.svg') center/cover repeat-x;opacity:.4;pointer-events:none;z-index:0;animation:sw-pan 60s linear infinite}
+.lp-met{padding:112px 0 96px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 20%,#1a2560 0%,#0c0e18 60%)}
+.lp-met::before{content:"";position:absolute;inset:0 -20%;background:url('img/soundwave.svg') center/cover repeat-x;opacity:.35;pointer-events:none;z-index:0;animation:sw-pan 60s linear infinite;mix-blend-mode:screen}
+.lp-met::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(241,236,73,.08) 0%,transparent 50%);pointer-events:none;z-index:0}
 @keyframes sw-pan{0%{transform:translateX(0)}100%{transform:translateX(-15%)}}
 @media (prefers-reduced-motion:reduce){.lp-met::before{animation:none}}
 .lp-met .w{position:relative;z-index:1}
-.lp-3s{display:flex;gap:0;margin:44px 0}
-.lp-3si{flex:1;text-align:center;padding:32px 28px;position:relative}
-.lp-3si+.lp-3si{border-left:1px solid rgba(255,255,255,.1)}
-.lp-3si-num{font-size:88px;font-weight:700;line-height:1;color:#f1ec49;margin-bottom:16px}
+.lp-met h2{text-shadow:0 2px 40px rgba(241,236,73,.15)}
+.lp-met h2::after{content:"";display:block;width:60px;height:3px;background:linear-gradient(90deg,transparent,#f1ec49,transparent);margin:18px auto 0;border-radius:2px}
+.lp-3s{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin:56px 0;position:relative}
+.lp-3s::before{content:"";position:absolute;top:120px;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,rgba(241,236,73,.3) 20%,rgba(241,236,73,.3) 80%,transparent);z-index:0}
+.lp-3si{text-align:center;padding:48px 28px 36px;position:relative;background:linear-gradient(180deg,rgba(255,255,255,.04) 0%,rgba(255,255,255,.01) 100%);border:1px solid rgba(255,255,255,.08);border-radius:20px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:all .4s cubic-bezier(.2,.8,.2,1);overflow:hidden}
+.lp-3si::before{content:"";position:absolute;inset:0;border-radius:20px;padding:1px;background:linear-gradient(135deg,rgba(241,236,73,.4),transparent 40%,transparent 60%,rgba(189,26,26,.3));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .4s}
+.lp-3si:hover{transform:translateY(-8px);border-color:rgba(241,236,73,.3);box-shadow:0 20px 60px rgba(241,236,73,.08)}
+.lp-3si:hover::before{opacity:1}
+.lp-3si-num{font-size:108px;font-weight:700;line-height:.95;background:linear-gradient(180deg,#f1ec49 0%,#e5d910 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:#f1ec49;margin-bottom:20px;letter-spacing:-.04em;filter:drop-shadow(0 0 24px rgba(241,236,73,.25));transition:filter .4s}
+.lp-3si:hover .lp-3si-num{filter:drop-shadow(0 0 40px rgba(241,236,73,.5))}
 .lp-3si-badge{
   display:inline-block;background:#142471;color:#fafbff;
   font-size:12px;font-weight:600;padding:4px 14px;border-radius:100px;
   margin-bottom:16px;text-transform:uppercase;letter-spacing:.05em;
 }
-.lp-3si h4{font-size:22px;font-weight:600;margin-bottom:8px;color:#fafbff}
-.lp-3si p{font-size:15px;color:rgba(255,255,255,.7)}
+.lp-3si h4{font-size:24px;font-weight:600;margin-bottom:12px;color:#fafbff;letter-spacing:-.01em}
+.lp-3si p{font-size:15px;line-height:1.6;color:rgba(255,255,255,.72)}
 
 /* ============ 11. REVIEWS (white bg) ============ */
 .lp-rev{padding:72px 0;background:#fafbff;border-radius:24px 24px 0 0;margin:0 16px}
@@ -358,7 +365,8 @@ html,body{background:#0c0e18;overflow-x:hidden}
   }
 
   /* Metodo */
-  .lp-3s{flex-direction:column}
+  .lp-3s{grid-template-columns:1fr;gap:16px}
+.lp-3s::before{display:none}
   .lp-3si+.lp-3si{border-left:none;border-top:1px solid rgba(255,255,255,.1)}
   .lp-3si h4{font-size:22px}
   .lp-3si-num{font-size:64px}
