@@ -354,8 +354,8 @@ html,body{background:#0c0e18;overflow-x:clip}
 
   /* Sections */
   .lp-ng{grid-template-columns:1fr}
-  .lp-nt strong{font-size:19px;line-height:1.3}
-  .lp-nt{font-size:15px;line-height:1.5}
+  .lp-nt strong{font-size:20px;line-height:1.3}
+  .lp-nt{font-size:18px;line-height:1.5}
   .lp-nn{font-size:56px}
 
   /* Pain points */
@@ -570,18 +570,18 @@ html,body{background:#0c0e18;overflow-x:clip}
 /* Responsive polish generale */
 @media(max-width:768px){
   .lp-hero h1{font-size:clamp(26px,7vw,38px)!important;line-height:1.15!important}
-  .lp-hero .hs{font-size:15px}
+  .lp-hero .hs{font-size:18px}
   .lp-stats-grid{gap:18px}
   .lp-stat-num{font-size:clamp(40px,10vw,64px)!important}
   .lp-forwho-head h2{font-size:clamp(24px,6vw,34px)}
   .lp-forwho-col{padding:28px 20px}
-  .lp-forwho-col li{font-size:15px;padding:14px 0 14px 32px}
+  .lp-forwho-col li{font-size:18px;padding:14px 0 14px 32px}
   .lp-gal-mid h2{font-size:clamp(24px,6vw,32px)}
-  .lp-gal-mid p{font-size:15px}
+  .lp-gal-mid p{font-size:18px}
   .lp-met h2{font-size:clamp(24px,6vw,34px)}
   .lp-why-copy h2{font-size:clamp(24px,6vw,34px)}
-  .lp-why-copy p{font-size:16px}
-  .lp-why-list li{font-size:16px}
+  .lp-why-copy p{font-size:18px}
+  .lp-why-list li{font-size:18px}
   .lp-about-name{font-size:clamp(28px,8vw,40px)!important}
 }
 @media(max-width:480px){
@@ -599,4 +599,21 @@ html,body{background:#0c0e18;overflow-x:clip}
 @media(max-width:768px){
   .cta-full{display:none}
   .cta-short{display:inline}
+}
+
+/* === MOBILE BODY TEXT 18px RULE === */
+@media(max-width:768px){
+  .lp p{font-size:18px}
+  .lp-pain-card p{font-size:18px}
+  .lp-card p{font-size:17px}
+  .lp-3si p{font-size:16px}
+  .lp-hl{font-size:20px}
+  .lp-stat-label{font-size:16px}
+  .lp-about-tag{font-size:14px}
+  .lp-footer-desc,.lp-footer-data p,.lp-footer-links a,.lp-footer h5{font-size:15px}
+  .lp-rt{font-size:13px}
+  .lp-forwho-kicker{font-size:13px}
+  .lp-forwho-badge{font-size:13px}
+  .lp-gal-badge{font-size:15px}
+  .lp-modal p,.lp-modal li{font-size:16px}
 }
