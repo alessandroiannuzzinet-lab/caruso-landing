@@ -185,7 +185,7 @@ html,body{background:#0D1332;overflow-x:clip}
 
 /* ============ 9. PAIN POINTS ============ */
 .lp-pain{padding:80px 0;background:#f5f5f5;border-radius:24px;margin:0 16px}
-.lp-pain-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:40px}
+.lp-pain-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin-top:40px}
 .lp-pain-card{
   background:#fafbff;border:1.5px solid #0D1332;border-radius:20px;padding:28px 20px;transition:all .3s;
 }
@@ -351,7 +351,7 @@ html,body{background:#0D1332;overflow-x:clip}
   .lp-nn{font-size:56px}
 
   /* Pain points */
-  .lp-pain-grid{grid-template-columns:1fr 1fr;gap:8px}
+  .lp-pain-grid{gap:10px}
   .lp-pain-card h4{font-size:20px}
 
   /* About: photo after title */
@@ -400,7 +400,7 @@ html,body{background:#0D1332;overflow-x:clip}
   .lp-modal{padding:32px 24px}
 }
 @media(max-width:480px){
-  .lp-pain-grid{grid-template-columns:1fr}
+  .lp-pain-grid{gap:10px}
 }
 
 /* === PERCHE IL TEST (sticky photo right) === */
@@ -581,7 +581,8 @@ html,body{background:#0D1332;overflow-x:clip}
   .lp-gal{margin:16px 12px!important;padding:56px 16px!important}
   .lp-met{margin:16px 12px!important;padding:72px 16px!important}
   .lp-forwho{margin:-32px 12px 16px!important;padding:48px 16px!important}
-  .lp-pain-grid{grid-template-columns:1fr!important;gap:10px}
+  .lp-pain-grid{gap:10px!important}
+  .lp-pain-card{flex:1 1 100%!important;max-width:100%!important}
 }
 
 .cta-short{display:none}
@@ -853,3 +854,6 @@ body{padding-bottom:96px}
   .lp-pain-qnum{font-size:36px}
   .lp-pain-q p{font-size:17px}
 }
+
+/* Pain card sizing flex 3 per row + row 2 auto-centered */
+.lp-pain-card{flex:1 1 calc(33.333% - 12px);min-width:260px;max-width:360px}
