@@ -753,7 +753,6 @@ img,video{max-width:100%;height:auto}
   display:flex;align-items:center;justify-content:center;
 }
 .lp-stickybar-close:hover{color:#fafbff;background:rgba(255,255,255,.1)}
-body{padding-bottom:96px}
 @media(max-width:768px){
   .lp-stickybar{padding:14px 14px}
   .lp-stickybar-in{max-width:100%;gap:10px}
@@ -762,7 +761,6 @@ body{padding-bottom:96px}
   .lp-stickybar-text strong{display:inline}
   .lp-stickybar-cta{padding:13px 20px;font-size:15px}
   .lp-stickybar-close{display:none}
-  body{padding-bottom:84px}
 }
 @media(max-width:480px){
   .lp-stickybar{padding:12px 12px}
@@ -770,7 +768,6 @@ body{padding-bottom:96px}
   .lp-stickybar-text strong{display:none}
   .lp-stickybar-cta{padding:11px 18px;font-size:14px}
   .lp-stickybar-cta svg{width:16px;height:16px}
-  body{padding-bottom:76px}
 }
 
 /* Sticky bar CTA — arrow diventa equalizer on hover */
