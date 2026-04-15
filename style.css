@@ -883,3 +883,6 @@ img,video{max-width:100%;height:auto}
 @media(max-width:768px){
   .lp-card-sub{top:56px;left:22px;right:22px;font-size:13px}
 }
+
+/* Voice Actor photo: object-position custom (subject centered, faccia visibile) */
+.lp-card:nth-child(2) .lp-card-img img{object-fit:cover;object-position:60% 30%}
