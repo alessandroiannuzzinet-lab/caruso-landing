@@ -469,7 +469,7 @@ html,body{background:#0D1332;overflow-x:clip}
   .lp-gal-mid{margin:24px auto;padding:20px 12px}
 }
 
-.lp-gal-i{transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s ease,filter .5s ease;filter:grayscale(100%)}
+.lp-gal-i{transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s ease}
 .lp-gal-i1:hover{transform:translateY(10px) scale(1.08) rotate(-2deg);z-index:5}
 .lp-gal-i2:hover{transform:translateY(-25px) scale(1.08) rotate(2deg);z-index:5}
 .lp-gal-i3:hover{transform:translateY(25px) scale(1.08) rotate(-2deg);z-index:5}
@@ -843,9 +843,9 @@ body{padding-bottom:96px}
 
 /* Pain section: due domande introduttive */
 .lp-pain-qs{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px}
-.lp-pain-q{display:flex;align-items:flex-start;gap:20px;background:#fafbff;border:1px solid rgba(13,19,50,.08);border-radius:16px;padding:28px 28px;transition:border-color .3s ease,transform .3s ease}
-.lp-pain-q:hover{border-color:#142471;transform:translateY(-3px)}
-.lp-pain-qnum{font-family:Urbanist,sans-serif;font-size:42px;font-weight:700;color:#142471;line-height:.9;flex-shrink:0;letter-spacing:-.04em}
+.lp-pain-q{display:flex;align-items:flex-start;gap:20px;background:transparent;border:0;border-radius:0;padding:12px 0;transition:transform .3s ease}
+.lp-pain-q:hover{transform:translateY(-2px)}
+.lp-pain-qnum{font-family:Urbanist,sans-serif;font-size:56px;font-weight:700;color:#bd1a1a;line-height:.9;flex-shrink:0;letter-spacing:-.04em}
 .lp-pain-q p{color:#0D1332;font-size:18px;line-height:1.5;font-weight:300;margin:0}
 .lp-pain-q p strong{color:#0D1332;font-weight:500}
 @media(max-width:768px){
