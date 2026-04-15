@@ -781,3 +781,13 @@ body{padding-bottom:96px}
 .lp-stickybar-cta:hover .lp-sb-arrow{opacity:0;transform:translateX(10px)}
 .lp-stickybar-cta:hover .lp-sb-eq{display:inline-flex;opacity:1;transform:scale(.85)}
 .lp-stickybar-cta .lp-sb-eq i{background:#0D1332}
+
+/* Card percorsi CTA: hover freccia → equalizer */
+.lp-card-cta{display:inline-flex;align-items:center;gap:8px;position:relative}
+.lp-card-cta .lp-cc-arrow{display:inline-block;transition:opacity .25s ease,transform .25s ease;font-size:18px;line-height:1}
+.lp-card-cta .lp-cc-eq{display:none;width:22px;height:14px;align-items:center;justify-content:center}
+.lp-card:hover .lp-card-cta .lp-cc-arrow,
+.lp-card.is-active .lp-card-cta .lp-cc-arrow{opacity:0;transform:translateX(10px);position:absolute}
+.lp-card:hover .lp-card-cta .lp-cc-eq,
+.lp-card.is-active .lp-card-cta .lp-cc-eq{display:inline-flex}
+.lp-card-cta .lp-cc-eq i{background:currentColor}
