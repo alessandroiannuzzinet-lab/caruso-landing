@@ -469,7 +469,7 @@ html,body{background:#0D1332;overflow-x:clip}
   .lp-gal-mid{margin:24px auto;padding:20px 12px}
 }
 
-.lp-gal-i{transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s ease}
+.lp-gal-i{transition:transform .6s cubic-bezier(.2,.8,.2,1),box-shadow .6s ease,filter .6s ease;filter:grayscale(100%) contrast(1.08) brightness(.92)}
 .lp-gal-i1:hover{transform:translateY(10px) scale(1.08) rotate(-2deg);z-index:5}
 .lp-gal-i2:hover{transform:translateY(-25px) scale(1.08) rotate(2deg);z-index:5}
 .lp-gal-i3:hover{transform:translateY(25px) scale(1.08) rotate(-2deg);z-index:5}
@@ -857,3 +857,6 @@ body{padding-bottom:96px}
 
 /* Pain card sizing flex 3 per row + row 2 auto-centered */
 .lp-pain-card{flex:1 1 calc(33.333% - 12px);min-width:260px;max-width:360px}
+
+/* Gallery hover: cinematic color grade */
+.lp-gal-i:hover{filter:saturate(1.22) contrast(1.15) brightness(1.03) grayscale(0)!important;box-shadow:0 30px 60px rgba(0,0,0,.5),inset 0 0 120px rgba(0,0,0,.25)}
