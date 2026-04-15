@@ -796,3 +796,16 @@ body{padding-bottom:96px}
 .lp-card:nth-child(3) p,
 .lp-card:nth-child(3) p em{color:#0D1332!important;font-weight:500}
 .lp-card:nth-child(3) p em{color:rgba(13,19,50,.7)!important;font-weight:400}
+
+/* === Mobile: allinea tutti i testi a SINISTRA === */
+@media(max-width:768px){
+  .lp h1,.lp h2,.lp h3,.lp h4,.lp p,.lp .tc,.tc{text-align:left!important}
+  .lp-hero-content,.wn,.lp-gal-mid,.lp-forwho-head,.lp-met .w,.lp-rev,.lp-why-copy{text-align:left!important}
+  /* Mantieni i CTA allineati centrati verticalmente ma con content a sinistra */
+  .lp-hero a.btn,.lp a.btn,.lp a.btn-dark{margin-left:0!important;margin-right:auto!important}
+  .lp-met h2::after{margin-left:0}
+  /* Gallery badge resta com'è */
+  .lp-stats-grid{text-align:left}
+  .lp-stat{text-align:left}
+  /* Kicker, badges, ecc. inline-block già a sinistra */
+}
