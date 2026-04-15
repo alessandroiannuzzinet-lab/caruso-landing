@@ -543,27 +543,6 @@ document.querySelectorAll('a[href^="#"]').forEach(function(a) {
 </script>
 
 
-<script id="header-scroll-observer">
-(function(){
-  var h=document.querySelector('.lp-header');
-  var bar=document.getElementById('lp-stickybar');
-  var scegli=document.getElementById('scegli');
-  function update(){
-    var trigger=Math.min(window.innerHeight*0.8,700);
-    if(h){if(window.scrollY>trigger)h.classList.add('scrolled');else h.classList.remove('scrolled')}
-    if(bar){
-      // Hide if past/inside #scegli (CTA cards)
-      var hideNear=false;
-      if(scegli){var r=scegli.getBoundingClientRect();hideNear=r.top<window.innerHeight}
-      if(window.scrollY>trigger && !hideNear)bar.classList.add('active');
-      else bar.classList.remove('active');
-    }
-  }
-  update();window.addEventListener('scroll',update,{passive:true});
-  window.addEventListener('resize',update,{passive:true});
-})();
-</script>
-
 <!-- STICKY BOTTOM BAR (DR style) -->
 <div class="lp-stickybar" id="lp-stickybar">
   <div class="lp-stickybar-in">
@@ -579,5 +558,24 @@ document.querySelectorAll('a[href^="#"]').forEach(function(a) {
   </div>
 </div>
 
+<script id="header-scroll-observer">
+document.addEventListener('DOMContentLoaded',function(){
+  var h=document.querySelector('.lp-header');
+  var bar=document.getElementById('lp-stickybar');
+  var scegli=document.getElementById('scegli');
+  function update(){
+    var trigger=Math.min(window.innerHeight*0.8,700);
+    if(h){if(window.scrollY>trigger)h.classList.add('scrolled');else h.classList.remove('scrolled')}
+    if(bar){
+      var hideNear=false;
+      if(scegli){var r=scegli.getBoundingClientRect();hideNear=r.top<window.innerHeight*0.9}
+      if(window.scrollY>trigger && !hideNear)bar.classList.add('active');
+      else bar.classList.remove('active');
+    }
+  }
+  update();window.addEventListener('scroll',update,{passive:true});
+  window.addEventListener('resize',update,{passive:true});
+});
+</script>
 </body>
 </html>
