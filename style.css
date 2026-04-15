@@ -856,3 +856,23 @@ img,video{max-width:100%;height:auto}
 
 /* Gallery hover: cinematic color grade */
 .lp-gal-i:hover{filter:saturate(1.22) contrast(1.15) brightness(1.03) grayscale(0)!important;box-shadow:0 30px 60px rgba(0,0,0,.5),inset 0 0 120px rgba(0,0,0,.25)}
+
+/* === CTA MICROCOPY (Dan Kennedy style) === */
+.lp a.btn,.lp a.btn-dark{
+  flex-direction:column;align-items:center;gap:2px;
+  padding-top:12px!important;padding-bottom:12px!important;
+}
+.cta-row{display:inline-flex;align-items:center;gap:10px;line-height:1}
+.cta-micro{
+  display:block;font-size:11px;font-weight:500;
+  letter-spacing:.14em;text-transform:uppercase;
+  margin-top:4px;opacity:.7;line-height:1;
+}
+.lp a.btn .cta-micro{color:#0D1332}
+.lp a.btn-dark .cta-micro{color:#f1ec49;opacity:.85}
+.lp a.btn:hover .cta-micro{color:#0D1332;opacity:.85}
+.lp a.btn-dark:hover .cta-micro{color:#fafbff;opacity:.85}
+@media(max-width:768px){
+  .cta-micro{font-size:10px;letter-spacing:.12em}
+  .lp a.btn,.lp a.btn-dark{padding-top:11px!important;padding-bottom:11px!important}
+}
