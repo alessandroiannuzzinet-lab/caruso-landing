@@ -459,7 +459,7 @@ html,body{background:#0D1332;overflow-x:clip}
 .lp-gal-mid{position:relative;z-index:10;max-width:720px;margin:32px auto;padding:32px 24px;color:#fafbff}
 .lp-gal-mid h2{font-family:Urbanist,sans-serif;font-weight:600;font-size:clamp(30px,3.6vw,44px);margin-bottom:16px;line-height:1.15;text-shadow:0 2px 20px rgba(0,0,0,.45)}
 .lp-gal-mid p{font-size:18px;line-height:1.6;color:rgba(255,255,255,.9);margin-bottom:24px;text-shadow:0 1px 12px rgba(0,0,0,.4)}
-.lp-gal-badge{text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid #fafbff;color:#fafbff;padding:10px 20px;border-radius:100px;font-weight:600;font-size:14px;letter-spacing:.5px}
+.lp-gal-badge{text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid #fafbff;color:#fafbff;padding:9px 18px;border-radius:100px;font-weight:600;font-size:12px;letter-spacing:.5px}
 .lp-gal-badge::before{content:"●";color:#fafbff}
 @media (max-width:900px){
   .lp-gal{padding:56px 12px}
@@ -809,3 +809,7 @@ body{padding-bottom:96px}
   .lp-stat{text-align:left}
   /* Kicker, badges, ecc. inline-block già a sinistra */
 }
+
+/* Gallery badge: -2px mobile */
+@media(max-width:768px){.lp-gal-badge{font-size:13px!important;padding:8px 14px}}
+@media(max-width:480px){.lp-gal-badge{font-size:12px!important;padding:7px 12px}}
