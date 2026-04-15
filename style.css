@@ -828,3 +828,14 @@ body{padding-bottom:96px}
   .lp-stars{font-size:11px}
   .lp-rt{font-size:11px!important}
 }
+
+/* Footer bottom line + credits */
+.lp-footer-bottom{max-width:1140px;margin:32px auto 0;padding:20px 32px 8px;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.lp-footer-bottom p{font-size:12px;color:rgba(255,255,255,.25);line-height:1.6;margin:0}
+.lp-footer-credits{text-align:right}
+.lp-footer-credits a{color:#f1ec49!important;text-decoration:none;transition:color .2s}
+.lp-footer-credits a:hover{color:#fafbff!important;text-decoration:underline}
+@media(max-width:768px){
+  .lp-footer-bottom{flex-direction:column;align-items:flex-start;padding:16px 20px 8px;margin-top:20px;gap:10px}
+  .lp-footer-credits{text-align:left}
+}
