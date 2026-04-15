@@ -840,16 +840,15 @@ img,video{max-width:100%;height:auto}
 
 /* Pain section: due domande introduttive */
 .lp-pain-qs{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px}
-.lp-pain-q{display:flex;align-items:flex-start;gap:20px;background:transparent;border:0;border-radius:0;padding:12px 0;transition:transform .3s ease}
-.lp-pain-q:hover{transform:translateY(-2px)}
-.lp-pain-qnum{font-family:Urbanist,sans-serif;font-size:56px;font-weight:700;color:#bd1a1a;line-height:.9;flex-shrink:0;letter-spacing:-.04em}
-.lp-pain-q p{color:#0D1332;font-size:18px;line-height:1.5;font-weight:300;margin:0}
+.lp-pain-q{display:flex;align-items:flex-start;gap:24px;background:transparent;border:0;border-radius:0;padding:16px 0}
+.lp-pain-qnum{font-family:Urbanist,sans-serif;font-size:88px;font-weight:700;color:#bd1a1a;line-height:.85;flex-shrink:0;letter-spacing:-.04em}
+.lp-pain-q p{color:#0D1332;font-size:22px;line-height:1.4;font-weight:300;margin:0;padding-top:14px}
 .lp-pain-q p strong{color:#0D1332;font-weight:500}
 @media(max-width:768px){
   .lp-pain-qs{grid-template-columns:1fr;gap:12px;margin-top:28px}
   .lp-pain-q{padding:22px 22px;gap:16px}
-  .lp-pain-qnum{font-size:36px}
-  .lp-pain-q p{font-size:17px}
+  .lp-pain-qnum{font-size:64px}
+  .lp-pain-q p{font-size:19px;padding-top:8px}
 }
 
 /* Pain card sizing flex 3 per row + row 2 auto-centered */
