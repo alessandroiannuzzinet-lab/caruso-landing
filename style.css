@@ -708,14 +708,14 @@ img,video{max-width:100%;height:auto}
   background:#0D1332;
   border-top:2px solid #f1ec49;
   transform:translateY(100%);transition:transform .4s cubic-bezier(.2,.8,.2,1);
-  padding:18px 20px;
+  padding:20px 24px;
   box-shadow:0 -14px 40px rgba(0,0,0,.5);
 }
 .lp-stickybar.active{transform:translateY(0)}
 .lp-stickybar.closed{display:none!important}
 .lp-stickybar-in{
-  max-width:1200px;margin:0 auto;
-  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  max-width:780px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
 }
 .lp-stickybar-msg{display:flex;align-items:center;gap:12px;flex:1;min-width:0}
 .lp-stickybar-pulse{
@@ -727,14 +727,15 @@ img,video{max-width:100%;height:auto}
   70%{box-shadow:0 0 0 10px rgba(189,26,26,0)}
   100%{box-shadow:0 0 0 0 rgba(189,26,26,0)}
 }
-.lp-stickybar-text{color:#fafbff;font-family:Urbanist,sans-serif;font-size:17px;font-weight:300;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lp-stickybar-text{color:#fafbff;font-family:Urbanist,sans-serif;font-size:19px;font-weight:300;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .lp-stickybar-text strong{color:#f1ec49;font-weight:500}
 .lp-stickybar-text em{color:#bd1a1a;font-style:normal;font-weight:500}
 .lp-stickybar-cta{
   display:inline-flex;align-items:center;gap:10px;
   background:#f1ec49;color:#0D1332!important;
-  padding:16px 32px;border-radius:100px;
-  font-family:Urbanist,sans-serif;font-weight:500;font-size:17px;
+  padding:18px 36px;border-radius:100px;
+  font-family:Urbanist,sans-serif;font-weight:500;font-size:18px;
+  position:relative;
   text-decoration:none!important;white-space:nowrap;
   transition:transform .25s ease,background .25s ease,box-shadow .25s ease;flex-shrink:0;
   animation:sbCtaBreathe 2.4s ease-in-out infinite;
@@ -751,9 +752,10 @@ img,video{max-width:100%;height:auto}
   display:flex;align-items:center;justify-content:center;
 }
 .lp-stickybar-close:hover{color:#fafbff;background:rgba(255,255,255,.1)}
-body{padding-bottom:88px}
+body{padding-bottom:96px}
 @media(max-width:768px){
   .lp-stickybar{padding:14px 14px}
+  .lp-stickybar-in{max-width:100%;gap:10px}
   .lp-stickybar-msg{gap:10px}
   .lp-stickybar-text{font-size:14px;font-weight:400}
   .lp-stickybar-text strong{display:inline}
@@ -769,3 +771,13 @@ body{padding-bottom:88px}
   .lp-stickybar-cta svg{width:16px;height:16px}
   body{padding-bottom:76px}
 }
+
+/* Sticky bar CTA — arrow diventa equalizer on hover */
+.lp-sb-arrow,.lp-sb-eq{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;transition:opacity .25s ease,transform .25s ease;position:relative}
+.lp-sb-arrow{opacity:1}
+.lp-sb-eq{opacity:0;position:absolute;inset:0;margin:auto 0 auto 0;transform:scale(.75)}
+.lp-stickybar-cta{position:relative}
+.lp-stickybar-cta .lp-sb-eq{position:static;display:none}
+.lp-stickybar-cta:hover .lp-sb-arrow{opacity:0;transform:translateX(10px)}
+.lp-stickybar-cta:hover .lp-sb-eq{display:inline-flex;opacity:1;transform:scale(.85)}
+.lp-stickybar-cta .lp-sb-eq i{background:#0D1332}
