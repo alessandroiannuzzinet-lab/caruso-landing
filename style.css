@@ -876,3 +876,10 @@ img,video{max-width:100%;height:auto}
   .cta-micro{font-size:10px;letter-spacing:.12em}
   .lp a.btn,.lp a.btn-dark{padding-top:11px!important;padding-bottom:11px!important}
 }
+
+/* Card subtitle sotto label */
+.lp-card-sub{position:absolute;top:64px;left:28px;right:28px;z-index:3;font-size:14px;font-weight:500;line-height:1.35;color:#fafbff;letter-spacing:-.005em}
+.lp-card:nth-child(3) .lp-card-sub{color:#0D1332}
+@media(max-width:768px){
+  .lp-card-sub{top:56px;left:22px;right:22px;font-size:13px}
+}
