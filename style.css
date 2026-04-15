@@ -81,7 +81,7 @@ html,body{background:#0D1332;overflow-x:clip}
 }
 .lp-header.scrolled{
   position:fixed;top:0;left:0;right:0;
-  background:rgba(12,14,24,.92);
+  background:rgba(13,19,50,.95);
   backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
   padding:10px 0;
   border-bottom-color:rgba(255,255,255,.1);
@@ -619,3 +619,96 @@ html,body{background:#0D1332;overflow-x:clip}
   .lp-modal p,.lp-modal li{font-size:16px}
 }
 
+
+/* === RESPONSIVE POLISH FINALE 15/04 === */
+/* Tablet 768-1024 */
+@media(max-width:1024px) and (min-width:769px){
+  .lp-hero-content{padding:56px 32px 120px;max-width:580px;margin-left:5%}
+  .lp-hero-img img{width:420px;right:0}
+  .lp-forwho-grid{gap:16px}
+  .lp-forwho-col{padding:36px 28px}
+  .lp-why-grid{grid-template-columns:1fr 320px;gap:40px}
+  .lp-cards .lp-cg{gap:12px}
+  .lp-3si{padding:40px 20px 32px}
+  .lp-3si-num{font-size:88px}
+}
+
+/* Mobile polish */
+@media(max-width:768px){
+  /* Hero: assicurati padding corretto */
+  .lp-hero{margin:12px!important;padding:0!important}
+  .lp-hero-content{padding:40px 24px 60px!important;margin:0!important;max-width:100%!important}
+
+  /* Per chi è/non è: disattiva min-height nth-child per evitare gap inutili */
+  .lp-forwho-col li:nth-child(1),
+  .lp-forwho-col li:nth-child(2),
+  .lp-forwho-col li:nth-child(3),
+  .lp-forwho-col li:nth-child(4),
+  .lp-forwho-col li:nth-child(5){min-height:auto}
+  .lp-forwho{margin:-32px 12px 16px!important;padding:56px 16px!important}
+  .lp-forwho-head{margin-bottom:32px}
+  .lp-forwho-col{padding:28px 22px}
+
+  /* Perché il Test: sticky photo disattiva su mobile */
+  .lp-why-img{position:static!important;aspect-ratio:16/10!important;max-width:100%!important;margin:0 auto 28px!important}
+  .lp-why{padding:56px 16px}
+  .lp-why .w{max-width:100%}
+
+  /* Gallery Dal palco */
+  .lp-gal{margin:16px 12px!important;padding:56px 14px!important;border-radius:20px}
+  .lp-gal-row{gap:10px}
+  .lp-gal-top .lp-gal-i,.lp-gal-bot .lp-gal-i{height:130px}
+
+  /* Metodo */
+  .lp-met{padding:64px 16px!important}
+  .lp-3si{padding:32px 20px 24px}
+
+  /* Pain section */
+  .lp-pain{margin:0 12px!important;padding:56px 16px}
+  .lp-pain-grid{gap:10px}
+  .lp-pain-card{padding:24px 20px}
+
+  /* Stats bar */
+  .lp-stats{padding:48px 16px}
+  .lp-stats-grid{gap:24px}
+
+  /* Chi sono */
+  .lp-about{padding:56px 16px}
+
+  /* Card percorsi */
+  .lp-cards{padding:48px 12px!important}
+  .lp-card{min-height:72vh;padding:24px 20px}
+  .lp-card h4{font-size:20px}
+  .lp-card p{font-size:17px;line-height:1.5}
+
+  /* Header spacing mobile */
+  .lp-header-in{padding:0 14px}
+
+  /* Reviews section */
+  .lp-rev{padding:48px 16px}
+  .lp-rev h2{font-size:clamp(24px,6vw,32px)}
+
+  /* Modal */
+  .lp-modal-box{max-width:92%;padding:32px 24px}
+  .lp-modal h2{font-size:22px}
+}
+
+/* Mobile small <= 480 */
+@media(max-width:480px){
+  .lp-hero-content{padding:32px 18px 48px!important}
+  .lp-top-in{margin-bottom:14px}
+  .lp-gal-top .lp-gal-i,.lp-gal-bot .lp-gal-i{height:108px}
+  .lp-why-img{aspect-ratio:4/3!important}
+  .lp-3si-num{font-size:72px}
+  .lp-forwho-col{padding:24px 18px}
+  .lp-forwho-col li{font-size:17px;padding:14px 0 14px 30px}
+  .lp-forwho-col li::before{width:20px;height:20px;top:18px}
+  .lp-card{min-height:64vh}
+
+  /* Footer stack */
+  .lp-footer-grid{grid-template-columns:1fr;gap:28px}
+}
+
+/* Evita overflow orizzontale su qualsiasi viewport */
+*{box-sizing:border-box}
+img,video{max-width:100%;height:auto}
