@@ -109,7 +109,7 @@
   text-transform:uppercase;text-align:center;margin:0 0 16px;
 }
 .ty-eyebrow--red{color:#bd1a1a}
-.ty-offer-lead{font-size:19px;line-height:1.7;font-weight:300;color:rgba(255,255,255,.82);max-width:780px;margin:0 auto 44px;text-align:center;text-wrap:pretty}
+.ty-offer-lead{font-size:18px;line-height:1.7;font-weight:300;color:rgba(255,255,255,.82);max-width:720px;margin:0 auto 44px;text-align:left;text-wrap:pretty}
 .ty-offer-lead strong{font-weight:500;color:#fafbff}
 
 /* Trust banner */
@@ -121,9 +121,10 @@
   border-radius:18px;padding:24px 28px;
 }
 .ty-trust-banner-icon{flex-shrink:0;width:52px;height:52px;background:rgba(241,236,73,.15);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.ty-trust-banner-body{text-align:left}
 .ty-trust-banner-body strong{display:block;font-size:20px;font-weight:600;color:#f1ec49;margin-bottom:8px}
-.ty-trust-banner-body p{font-size:17px;line-height:1.65;color:rgba(255,255,255,.88);font-weight:300;margin:0}
-.ty-trust-banner-body p strong{display:inline;font-size:17px;color:#fafbff;font-weight:500;margin:0}
+.ty-trust-banner-body p{font-size:16px;line-height:1.65;color:rgba(255,255,255,.88);font-weight:300;margin:0;text-align:left}
+.ty-trust-banner-body p strong{display:inline;font-size:16px;color:#fafbff;font-weight:500;margin:0}
 .ty-trust-banner-body em{font-style:italic;color:#f1ec49;font-weight:400}
 
 /* Stats bar 4 col — pattern lp-stats */
@@ -205,7 +206,7 @@
 }
 .ty-reviews-v h2{color:#0D1332!important;text-align:center;margin:0 auto 24px;text-wrap:balance;max-width:780px}
 .ty-reviews-v h2 em{color:#bd1a1a;font-weight:500}
-.ty-reviews-lead{font-size:17px!important;line-height:1.7;color:#374151!important;font-weight:300;text-align:center;max-width:780px;margin:0 auto 48px;text-wrap:pretty}
+.ty-reviews-lead{font-size:17px!important;line-height:1.7;color:#374151!important;font-weight:300;text-align:left;max-width:720px;margin:0 auto 48px;text-wrap:pretty}
 .ty-reviews-lead strong{color:#0D1332!important;font-weight:600}
 
 .ty-reviews-grid{
