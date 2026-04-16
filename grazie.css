@@ -109,7 +109,7 @@
   text-transform:uppercase;text-align:center;margin:0 0 16px;
 }
 .ty-eyebrow--red{color:#bd1a1a}
-.ty-offer-lead{font-size:19px;line-height:1.7;font-weight:300;color:rgba(255,255,255,.82);max-width:760px;margin:0 auto 44px;text-align:center;text-wrap:pretty}
+.ty-offer-lead{font-size:19px;line-height:1.7;font-weight:300;color:rgba(255,255,255,.82);max-width:780px;margin:0 auto 44px;text-align:center;text-wrap:pretty}
 .ty-offer-lead strong{font-weight:500;color:#fafbff}
 
 /* Trust banner */
@@ -205,7 +205,7 @@
 }
 .ty-reviews-v h2{color:#0D1332!important;text-align:center;margin:0 0 24px;text-wrap:balance}
 .ty-reviews-v h2 em{color:#bd1a1a;font-weight:500}
-.ty-reviews-lead{font-size:17px!important;line-height:1.7;color:#374151!important;font-weight:300;text-align:left;max-width:720px;margin:0 auto 48px;text-wrap:pretty}
+.ty-reviews-lead{font-size:17px!important;line-height:1.7;color:#374151!important;font-weight:300;text-align:center;max-width:780px;margin:0 auto 48px;text-wrap:pretty}
 .ty-reviews-lead strong{color:#0D1332!important;font-weight:600}
 
 .ty-reviews-grid{
