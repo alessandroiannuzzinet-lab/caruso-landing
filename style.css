@@ -905,8 +905,14 @@ img,video{max-width:100%;height:auto}
 }
 /* Voice Actor landscape: cover full width, shift a sinistra, no margini */
 .lp-card-img--actor img{
+  width:88%!important;
+  height:88%!important;
   object-fit:cover!important;
-  object-position:55% 25%!important;
+  object-position:48% 25%!important;
+  top:auto!important;
+  bottom:0!important;
+  left:0!important;
+  right:auto!important;
   filter:none!important;
 }
 @media(max-width:768px){
