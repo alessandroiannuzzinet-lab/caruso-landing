@@ -906,9 +906,9 @@ img,video{max-width:100%;height:auto}
 /* Voice Actor: scale up fino al bottom card */
 .lp-cg .lp-card{overflow:hidden}
 .lp-card:nth-child(2) .lp-card-img--cutout img{
-  object-position:40% top!important;
+  object-position:62% top!important;
   transform:scale(2.3);
-  transform-origin:40% 0%;
+  transform-origin:62% 0%;
 }
 @media(max-width:768px){
   .lp-card-img--cutout{top:76px!important}
