@@ -1,132 +1,265 @@
 /* =========================================================
-   GRAZIE / THANK YOU — Branding allineato a index.html
-   Palette: #0D1332 / #142471 / #f1ec49 / #bd1a1a / #fafbff
-   Font: Urbanist (300-600). Border-radius 24px. Margin 16px pattern.
+   GRAZIE / THANK YOU — Brand landing GLC
+   Ruba pattern da index.html: lp-hero, lp-top-in, lp-bul, lp-stats,
+   lp-met numeri giganti, border-radius 24 margin 16 alternanza bianco/dark
    ========================================================= */
 
-.ty{background:#0D1332;color:#fafbff;font-family:'Urbanist',sans-serif;min-height:100vh}
-.ty a{color:#f1ec49;text-decoration:none}
-.ty a:hover{text-decoration:underline}
-.ty .w{max-width:1200px;margin:0 auto;padding:0 24px}
-.ty .wn{max-width:860px;margin:0 auto;padding:0 24px}
-.ty .tc{text-align:center}
+/* ============ CTA .btn — già da style.css landing ============ */
+.ty .btn .cta-row{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:500}
+.ty .btn .cta-micro{display:block;font-size:11px;font-weight:600;letter-spacing:.12em;color:rgba(13,19,50,.6);margin-top:6px;text-transform:uppercase}
+.ty .btn{flex-direction:column;align-items:flex-start;padding:14px 30px!important}
 
-/* -------- HEADER -------- */
-.ty-header{background:#0D1332;padding:18px 24px;border-bottom:1px solid rgba(255,255,255,.06)}
-.ty-header .lp-header-in{display:flex;justify-content:center;align-items:center;max-width:1200px;margin:0 auto}
-.ty-header .lp-header-logo img{height:40px}
+/* ============ SECTION 1 — HERO ============ */
+.ty-hero{
+  min-height:560px!important;
+  display:block!important;
+  padding:0!important;
+}
+.ty-hero .ty-hero-content{
+  padding:48px 48px 48px 56px;
+  max-width:560px;
+  margin:0!important;
+  position:relative;z-index:2;
+}
+.ty-hero .ty-hero-tag{
+  font-size:16px!important;padding:12px 24px!important;
+  display:inline-flex!important;align-items:center;gap:4px;
+  background:rgba(241,236,73,.15)!important;
+  border:1.5px solid rgba(241,236,73,.35);
+  white-space:normal!important;line-height:1.3;
+}
+.ty-hero h1{margin-bottom:20px;color:#fafbff;font-weight:500;line-height:1.1}
+.ty-hero h1 strong{color:#f1ec49;font-weight:700!important;white-space:nowrap}
+.ty-hero .hs{font-size:18px;line-height:1.65;color:rgba(255,255,255,.82);margin-bottom:28px;font-weight:300}
+.ty-hero .hs strong{color:#fafbff;font-weight:500}
 
-/* -------- HERO — video above the fold -------- */
-.ty-hero{background:#142471;margin:16px;border-radius:24px;padding:56px 44px;overflow:hidden;position:relative}
-.ty-hero-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:52px;align-items:center;max-width:1200px;margin:0 auto}
+/* Social proof bar dentro hero — stesso pattern lp-top-in */
+.ty-hero .lp-top-in{margin-bottom:18px}
 
-.ty-hero-copy{color:#fafbff}
-.ty-badge{display:inline-flex;align-items:center;gap:10px;padding:9px 20px;border-radius:100px;background:rgba(241,236,73,.14);border:1.5px solid #f1ec49;color:#f1ec49;font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:22px}
-.ty-hero h1{font-size:clamp(32px,4.2vw,50px);font-weight:600;line-height:1.08;margin:0 0 22px;letter-spacing:-.02em}
-.ty-hero h1 strong{color:#f1ec49;font-weight:700;white-space:nowrap}
-.ty-hero .hs{font-size:clamp(16px,1.6vw,19px);line-height:1.6;font-weight:300;color:rgba(255,255,255,.85);margin:0 0 28px}
-.ty-hero .hs strong{font-weight:600;color:#fafbff}
-
-.ty-check{display:flex;gap:16px;align-items:flex-start;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:18px 20px;margin-bottom:22px}
-.ty-check-icon{font-size:26px;flex-shrink:0;line-height:1;margin-top:2px}
-.ty-check strong{display:block;font-size:15px;font-weight:600;color:#fafbff;margin-bottom:4px}
-.ty-check p{font-size:13px;line-height:1.5;color:rgba(255,255,255,.75);font-weight:300;margin:0}
-.ty-check em{font-style:normal;color:#f1ec49;font-weight:500}
-.ty-check strong em{color:#f1ec49}
-
-.ty-arrow-cta{font-size:14px;color:#f1ec49;font-weight:500;letter-spacing:.03em;margin:0;text-align:center}
-
-.ty-hero-video{}
-.ty-video-frame{position:relative;aspect-ratio:16/9;border-radius:20px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.45);background:#000}
+/* Video above-the-fold nel hero (colonna dx) */
+.ty-hero-video{
+  position:absolute;right:32px;top:50%;transform:translateY(-50%);
+  width:44%;z-index:3;
+}
+.ty-video-frame{
+  position:relative;aspect-ratio:16/9;
+  border-radius:20px;overflow:hidden;
+  background:#000;
+  box-shadow:0 30px 70px rgba(0,0,0,.55), 0 0 0 3px rgba(241,236,73,.18);
+}
 .ty-video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
-.ty-video-cap{margin-top:14px;font-size:13px;color:rgba(255,255,255,.7);text-align:center;font-weight:300}
+.ty-video-cap{margin-top:14px;font-size:13px;color:rgba(255,255,255,.75);text-align:center;font-weight:500;letter-spacing:.02em}
 
-/* -------- EYEBROW LABEL -------- */
-.ty-eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;color:#f1ec49;text-transform:uppercase;text-align:center;margin:0 0 14px}
+/* ============ SECTION 2 — CHECK EMAIL (white strip) ============ */
+.ty-check-section{
+  background:#fafbff;color:#0D1332;
+  margin:16px;border-radius:24px;
+  padding:36px 32px;
+}
+.ty-check-grid{
+  display:grid;grid-template-columns:auto 1fr auto;gap:32px;
+  align-items:center;max-width:1080px;margin:0 auto;
+}
+.ty-check-icon-lg{font-size:54px;line-height:1}
+.ty-check-body h3{font-size:22px;font-weight:600;color:#0D1332;margin:0 0 6px;line-height:1.3}
+.ty-check-body p{font-size:15px;line-height:1.55;color:#4b5563;font-weight:400;margin:0}
+.ty-check-body strong{color:#0D1332;font-weight:600}
+.ty-check-stat{text-align:center;border-left:2px solid #e5e7eb;padding-left:32px}
+.ty-check-stat-num{font-size:54px;font-weight:700;color:#bd1a1a;line-height:1;letter-spacing:-.02em}
+.ty-check-stat-num small{font-size:18px;font-weight:500;color:#6b7280;margin-left:4px}
+.ty-check-stat-label{font-size:12px;color:#6b7280;line-height:1.35;margin-top:4px;letter-spacing:.03em}
 
-/* -------- OFFER + CALENDAR -------- */
-.ty-offer{background:#0D1332;margin:16px;border-radius:24px;padding:72px 44px;overflow:hidden}
-.ty-offer h2{font-size:clamp(28px,3.6vw,42px);font-weight:600;line-height:1.15;text-align:center;margin:0 0 22px;letter-spacing:-.01em;color:#fafbff}
+/* ============ SECTION 3 — OFFERTA + CALENDAR ============ */
+.ty-offer{
+  background:#0D1332;color:#fafbff;
+  margin:16px;border-radius:24px;
+  padding:72px 48px;overflow:hidden;
+}
+.ty-eyebrow{
+  font-size:12px;font-weight:700;letter-spacing:.16em;color:#f1ec49;
+  text-transform:uppercase;text-align:center;margin:0 0 14px;
+}
+.ty-eyebrow--red{color:#bd1a1a}
+.ty-offer h2{font-size:clamp(30px,3.8vw,44px);font-weight:600;line-height:1.15;text-align:center;margin:0 0 22px;letter-spacing:-.015em;color:#fafbff}
 .ty-offer h2 em{font-style:italic;color:#f1ec49;font-weight:500}
-.ty-offer-lead{font-size:17px;line-height:1.6;font-weight:300;color:rgba(255,255,255,.82);max-width:780px;margin:0 auto 48px;text-align:center}
-.ty-offer-lead strong{font-weight:600;color:#fafbff}
+.ty-offer-lead{font-size:17px;line-height:1.6;font-weight:300;color:rgba(255,255,255,.8);max-width:780px;margin:0 auto 44px;text-align:center}
+.ty-offer-lead strong{font-weight:500;color:#fafbff}
 
-.ty-offer-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}
+/* 4 stats bar, stesso pattern lp-stats */
+.ty-offer-stats{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+  max-width:900px;margin:0 auto 52px;
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);
+  border-radius:18px;overflow:hidden;
+}
+.ty-offer-stat{text-align:center;padding:28px 20px;border-right:1px solid rgba(255,255,255,.08)}
+.ty-offer-stat:last-child{border-right:0}
+.ty-offer-stat-num{font-size:clamp(38px,5vw,64px);font-weight:700;line-height:1;color:#f1ec49;letter-spacing:-.02em}
+.ty-offer-stat-num small{font-size:18px;color:rgba(241,236,73,.7);margin-left:3px;font-weight:500}
+.ty-offer-stat-label{font-size:12px;color:rgba(255,255,255,.65);margin-top:8px;letter-spacing:.05em;text-transform:uppercase}
 
-.ty-offer-info{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:32px 28px}
-.ty-tag{display:inline-block;padding:7px 14px;border-radius:100px;background:#f1ec49;color:#0D1332;font-size:11px;font-weight:700;letter-spacing:.1em;margin-bottom:16px}
-.ty-offer-info h3{font-size:20px;font-weight:600;line-height:1.3;margin:0 0 18px;color:#fafbff}
-.ty-offer-list{list-style:none;padding:0;margin:0 0 22px}
-.ty-offer-list li{position:relative;padding:9px 0 9px 30px;font-size:14px;line-height:1.5;font-weight:300;color:rgba(255,255,255,.85);border-bottom:1px solid rgba(255,255,255,.08)}
+/* 2 colonne info + calendario */
+.ty-offer-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:36px;align-items:start}
+
+.ty-offer-info{
+  background:linear-gradient(180deg,rgba(20,36,113,.4) 0%,rgba(13,19,50,.2) 100%);
+  border:1px solid rgba(241,236,73,.18);
+  border-radius:20px;padding:36px 32px;
+}
+.ty-tag{display:inline-block;padding:8px 16px;border-radius:100px;background:#f1ec49;color:#0D1332;font-size:11px;font-weight:700;letter-spacing:.12em;margin-bottom:18px}
+.ty-offer-info h3{font-size:22px;font-weight:600;line-height:1.3;margin:0 0 20px;color:#fafbff}
+
+.ty-offer-list{list-style:none;padding:0;margin:0 0 24px}
+.ty-offer-list li{
+  position:relative;padding:12px 0 12px 42px;
+  font-size:15px;line-height:1.55;font-weight:300;color:rgba(255,255,255,.9);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
 .ty-offer-list li:last-child{border:none}
-.ty-offer-list li::before{content:'✓';position:absolute;left:0;top:9px;width:20px;height:20px;background:#f1ec49;color:#0D1332;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.ty-offer-list li::before{
+  content:'✓';position:absolute;left:0;top:12px;
+  width:26px;height:26px;background:#f1ec49;color:#0D1332;
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:14px;font-weight:700;
+}
 .ty-offer-list strong{font-weight:600;color:#fafbff}
 
-.ty-scarcity{display:flex;gap:10px;align-items:flex-start;background:rgba(189,26,26,.15);border:1px solid rgba(189,26,26,.4);border-radius:12px;padding:12px 14px;margin-bottom:18px;font-size:13px;line-height:1.45;color:rgba(255,255,255,.9)}
+.ty-scarcity{
+  display:flex;gap:12px;align-items:flex-start;
+  background:rgba(189,26,26,.15);border:1px solid rgba(189,26,26,.45);
+  border-radius:14px;padding:14px 16px;margin-bottom:20px;
+  font-size:14px;line-height:1.5;color:rgba(255,255,255,.9);
+}
 .ty-scarcity svg{flex-shrink:0;margin-top:2px}
 .ty-scarcity strong{color:#fafbff;font-weight:600}
 
-.ty-guarantee{font-size:12px;line-height:1.55;color:rgba(255,255,255,.68);font-weight:300;border-top:1px dashed rgba(255,255,255,.15);padding-top:14px;margin:0}
-.ty-guarantee strong{color:#f1ec49;font-weight:600}
-.ty-guarantee em{font-style:italic;color:rgba(255,255,255,.85)}
+.ty-guarantee{
+  display:flex;gap:14px;align-items:flex-start;
+  background:rgba(241,236,73,.08);border:1px solid rgba(241,236,73,.25);
+  border-radius:14px;padding:16px 18px;
+}
+.ty-guarantee-icon{flex-shrink:0;width:42px;height:42px;background:rgba(241,236,73,.15);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.ty-guarantee strong{display:block;font-size:14px;font-weight:700;color:#f1ec49;margin-bottom:6px;letter-spacing:.02em}
+.ty-guarantee p{font-size:13px;line-height:1.55;color:rgba(255,255,255,.8);font-weight:300;margin:0}
+.ty-guarantee em{font-style:italic;color:#fafbff;font-weight:500}
 
-.ty-cal-wrap{background:#fafbff;border-radius:20px;overflow:hidden;min-height:780px;position:relative;box-shadow:0 14px 40px rgba(0,0,0,.35)}
-.ty-cal-wrap iframe{width:100%!important;min-height:780px;border:0;display:block;background:#fafbff}
+/* Calendario GHL wrap */
+.ty-cal-wrap{
+  background:#fafbff;border-radius:20px;overflow:hidden;
+  min-height:820px;position:relative;
+  box-shadow:0 20px 50px rgba(0,0,0,.4), 0 0 0 3px rgba(241,236,73,.12);
+}
+.ty-cal-wrap iframe{width:100%!important;min-height:820px;border:0;display:block;background:#fafbff}
 
-/* -------- VIDEO TESTIMONIANZE -------- */
-.ty-reviews-v{background:#fafbff;margin:16px;border-radius:24px;padding:72px 44px;color:#0D1332}
-.ty-reviews-v .ty-eyebrow{color:#bd1a1a}
-.ty-reviews-v h2{font-size:clamp(28px,3.4vw,40px);font-weight:600;line-height:1.2;text-align:center;margin:0 0 14px;color:#0D1332}
-.ty-reviews-lead{font-size:16px;line-height:1.55;color:#374151;font-weight:300;text-align:center;max-width:720px;margin:0 auto 44px}
+/* ============ SECTION 4 — TESTIMONIANZE VIDEO (white) ============ */
+.ty-reviews-v{
+  background:#fafbff;color:#0D1332;
+  margin:16px;border-radius:24px;
+  padding:80px 48px;
+}
+.ty-reviews-v h2{font-size:clamp(30px,3.6vw,44px);font-weight:600;line-height:1.15;text-align:center;margin:0 0 16px;color:#0D1332;letter-spacing:-.01em}
+.ty-reviews-v h2 em{font-style:italic;color:#bd1a1a;font-weight:600}
+.ty-reviews-lead{font-size:17px;line-height:1.6;color:#4b5563;font-weight:300;text-align:center;max-width:700px;margin:0 auto 48px}
+.ty-reviews-lead strong{color:#0D1332;font-weight:600}
 
-.ty-reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.ty-review-v .ty-video-frame{border-radius:16px;box-shadow:0 10px 28px rgba(20,36,113,.12)}
-.ty-review-meta{margin-top:12px;text-align:center}
-.ty-review-meta strong{display:block;font-size:16px;font-weight:600;color:#0D1332;margin-bottom:2px}
-.ty-review-meta span{font-size:13px;color:#6b7280}
+.ty-reviews-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:28px;
+  max-width:1200px;margin:0 auto;
+}
+.ty-review-v{transition:transform .35s}
+.ty-review-v:hover{transform:translateY(-4px)}
+.ty-review-v .ty-video-frame{
+  border-radius:16px;
+  box-shadow:0 12px 32px rgba(20,36,113,.18), 0 0 0 1px rgba(20,36,113,.06);
+}
+.ty-review-meta{margin-top:14px;text-align:center}
+.ty-review-meta strong{display:block;font-size:17px;font-weight:600;color:#0D1332;margin-bottom:3px;letter-spacing:-.005em}
+.ty-review-meta span{font-size:13px;color:#6b7280;font-weight:400}
 
-/* -------- TIMELINE -------- */
-.ty-timeline{background:#0D1332;margin:16px;border-radius:24px;padding:72px 44px}
-.ty-timeline h2{font-size:clamp(26px,3.4vw,38px);font-weight:600;line-height:1.2;text-align:center;margin:0 0 44px;color:#fafbff;letter-spacing:-.01em}
-.ty-steps{display:flex;flex-direction:column;gap:16px;max-width:720px;margin:0 auto}
-.ty-step{display:flex;gap:22px;align-items:flex-start;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:20px 24px}
-.ty-step-n{font-size:32px;font-weight:700;color:#f1ec49;line-height:1;flex-shrink:0;width:54px}
-.ty-step-body strong{display:block;font-size:13px;font-weight:700;color:#f1ec49;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px}
+/* ============ SECTION 5 — TIMELINE (dark, numeri giganti lp-met style) ============ */
+.ty-timeline{
+  background:#0D1332;color:#fafbff;
+  margin:16px;border-radius:24px;
+  padding:80px 48px;
+}
+.ty-timeline h2{font-size:clamp(28px,3.6vw,42px);font-weight:600;line-height:1.15;text-align:center;margin:0 0 52px;letter-spacing:-.01em;color:#fafbff}
+.ty-timeline h2 em{font-style:italic;color:#f1ec49;font-weight:500}
+
+.ty-steps{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+  max-width:1200px;margin:0 auto 48px;
+}
+.ty-step{
+  display:flex;flex-direction:column;gap:12px;
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);
+  border-radius:18px;padding:28px 26px;
+  transition:all .35s;
+}
+.ty-step:hover{background:rgba(255,255,255,.07);border-color:rgba(241,236,73,.35);transform:translateY(-3px)}
+.ty-step-n{
+  font-size:88px;font-weight:700;color:#f1ec49;
+  line-height:.9;letter-spacing:-.04em;
+}
+.ty-step-body strong{display:block;font-size:13px;font-weight:700;color:#f1ec49;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
 .ty-step-body p{font-size:15px;line-height:1.55;font-weight:300;color:rgba(255,255,255,.85);margin:0}
 .ty-step-body em{color:#fafbff;font-style:italic;font-weight:500}
-.ty-timeline-note{margin-top:32px;font-size:14px;color:rgba(255,255,255,.7);font-weight:300}
 
-/* -------- COMMUNITY -------- */
-.ty-community{background:#142471;margin:16px;border-radius:24px;padding:60px 44px;text-align:center}
-.ty-community h2{font-size:clamp(22px,2.6vw,30px);font-weight:600;margin:0 0 12px;color:#fafbff}
-.ty-community p{font-size:15px;line-height:1.55;color:rgba(255,255,255,.8);font-weight:300;max-width:540px;margin:0 auto 28px}
+.ty-timeline-cta{margin-top:40px}
+.ty-timeline-cta p{font-size:17px;color:rgba(255,255,255,.75);margin-bottom:16px;font-weight:300}
+
+/* ============ SECTION 6 — COMMUNITY ============ */
+.ty-community{
+  background:#142471;color:#fafbff;
+  margin:16px;border-radius:24px;
+  padding:64px 48px;text-align:center;
+}
+.ty-community h2{font-size:clamp(26px,3.2vw,38px);font-weight:600;margin:0 0 16px;color:#fafbff;line-height:1.2}
+.ty-community p{font-size:17px;line-height:1.55;color:rgba(255,255,255,.8);font-weight:300;max-width:560px;margin:0 auto 32px}
 .ty-socials{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.ty-social-btn{display:inline-flex;align-items:center;gap:10px;padding:11px 20px;border-radius:100px;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.2);color:#fafbff!important;font-size:14px;font-weight:500;transition:all .3s;text-decoration:none!important}
-.ty-social-btn:hover{background:rgba(255,255,255,.15);border-color:#f1ec49;transform:translateY(-2px)}
+.ty-social-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:13px 22px;border-radius:100px;
+  background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.22);
+  color:#fafbff!important;font-size:14px;font-weight:500;
+  transition:all .3s;text-decoration:none!important;
+}
+.ty-social-btn:hover{background:rgba(241,236,73,.15);border-color:#f1ec49;transform:translateY(-2px)}
 
-/* -------- FOOTER -------- */
+/* ============ FOOTER ============ */
 .ty-footer{background:#080A12;padding:32px 24px;margin-top:16px}
 .ty-footer p{font-size:13px;color:rgba(255,255,255,.5);font-weight:300;margin:4px 0}
 .ty-footer a{color:rgba(255,255,255,.65)!important}
 .ty-footer a:hover{color:#f1ec49!important;text-decoration:none!important}
 .ty-powered{font-size:12px!important;letter-spacing:.02em}
 
-/* -------- MOBILE -------- */
-@media(max-width:900px){
-  .ty-hero{padding:40px 28px;margin:12px}
-  .ty-hero-grid{grid-template-columns:1fr;gap:32px}
-  .ty-hero-copy{text-align:left}
+/* ============ MOBILE ============ */
+@media(max-width:1024px){
+  .ty-hero-video{position:static;transform:none;width:100%;margin:24px 0 40px}
+  .ty-hero .ty-hero-content{max-width:100%;padding:40px 32px 8px}
+  .ty-hero{padding-bottom:40px!important}
+  .ty-offer-stats{grid-template-columns:repeat(2,1fr)}
+  .ty-offer-stat:nth-child(2){border-right:0}
+  .ty-offer-stat:nth-child(1),.ty-offer-stat:nth-child(2){border-bottom:1px solid rgba(255,255,255,.08)}
+  .ty-offer-grid{grid-template-columns:1fr;gap:28px}
+  .ty-steps{grid-template-columns:repeat(2,1fr)}
+  .ty-reviews-grid{grid-template-columns:repeat(2,1fr);gap:22px}
+}
+@media(max-width:700px){
+  .ty-hero{min-height:auto!important;margin:12px}
+  .ty-hero .ty-hero-content{padding:32px 24px 12px}
   .ty-offer,.ty-reviews-v,.ty-timeline,.ty-community{padding:52px 24px;margin:12px}
-  .ty-offer-grid{grid-template-columns:1fr;gap:24px}
+  .ty-check-section{padding:28px 22px;margin:12px}
+  .ty-check-grid{grid-template-columns:1fr;gap:16px;text-align:center}
+  .ty-check-stat{border-left:0;border-top:2px solid #e5e7eb;padding-left:0;padding-top:16px}
+  .ty-offer-info{padding:26px 22px}
   .ty-cal-wrap{min-height:720px}
   .ty-cal-wrap iframe{min-height:720px}
-  .ty-reviews-grid{grid-template-columns:1fr;gap:28px;max-width:520px;margin:0 auto}
-}
-@media(max-width:640px){
-  .ty-hero{padding:32px 22px}
-  .ty-offer,.ty-reviews-v,.ty-timeline,.ty-community{padding:44px 22px}
-  .ty-offer-info{padding:24px 20px}
-  .ty-check{flex-direction:row;padding:16px}
-  .ty-step{padding:16px 18px;gap:16px}
-  .ty-step-n{font-size:26px;width:42px}
+  .ty-steps{grid-template-columns:1fr;gap:14px}
+  .ty-step{padding:22px}
+  .ty-step-n{font-size:64px}
+  .ty-reviews-grid{grid-template-columns:1fr;max-width:520px;margin:0 auto}
+  .ty-offer-stats{grid-template-columns:1fr}
+  .ty-offer-stat{border-right:0;border-bottom:1px solid rgba(255,255,255,.08)}
+  .ty-offer-stat:last-child{border-bottom:0}
+  .ty-offer-stat-num{font-size:44px}
 }

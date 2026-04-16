@@ -13,7 +13,6 @@
 </head>
 <body>
 
-<!-- DataLayer event conversion (si attiva con GTM) -->
 <script>
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({event:'lead_submitted',funnel_step:'thank_you_test',lead_source:'voice_test',page_type:'thank_you'});
@@ -22,9 +21,9 @@
 <div class="lp ty">
 
 <!-- =========================================================
-     SECTION 0 — HEADER (logo solo)
+     SECTION 0 — HEADER (logo centrato)
      ========================================================= -->
-<header class="lp-header ty-header">
+<header class="lp-header">
   <div class="lp-header-in" style="justify-content:center">
     <a href="https://carusospeaker.it" class="lp-header-logo">
       <img src="https://carusospeaker.it/newsite2022/wp-content/uploads/2026/04/CarusoSpekar-Logo-white-orizzontal.png" alt="Caruso Speaker">
@@ -34,46 +33,73 @@
 
 <!-- =========================================================
      SECTION 1 — HERO con VIDEO above-the-fold (#conferma)
-     Brand: bg #142471 (blu Caruso), giallo accent, Urbanist
+     Pattern identico lp-hero: bg #142471, tag pill giallo, social proof bar, CTA eq
      ========================================================= -->
-<section id="conferma" class="ty-hero">
-  <div class="ty-hero-grid">
-    <div class="ty-hero-copy">
-      <div class="ty-badge">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#f1ec49" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span>Test Completato</span>
-      </div>
-      <h1>Complimenti.<br>Il tuo <strong>Voice&nbsp;Leadership&nbsp;Scan</strong> è in arrivo.</h1>
-      <p class="hs">Hai fatto il primo passo reale verso una Voce più consapevole e autorevole. Tra qualche minuto ti arriva via email il tuo <strong>Profilo di Comunicazione Vocale</strong> personalizzato.</p>
-
-      <div class="ty-check">
-        <div class="ty-check-icon">📧</div>
-        <div>
-          <strong>Controlla la tua casella email</strong>
-          <p>Se non lo vedi entro 5 minuti, guarda in <em>Promozioni</em>, <em>Spam</em> o <em>Aggiornamenti</em>. Segnalalo come <strong>"Non è spam"</strong> per non perdere nessun messaggio futuro.</p>
-        </div>
-      </div>
-
-      <p class="ty-arrow-cta">↓ Guarda il video e prenota la tua Sessione gratuita ↓</p>
+<section id="conferma" class="ty-hero lp-hero">
+  <div class="ty-hero-content">
+    <div class="lp-top-in">
+      <div class="lp-av"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="lp-stars"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
+      <span class="lp-rt">+470 recensioni</span>
     </div>
 
-    <div class="ty-hero-video">
-      <div class="ty-video-frame">
-        <iframe src="https://www.youtube.com/embed/N3yNzi3gE0s?rel=0&modestbranding=1" title="Gian Luca Caruso — La tua voce registrata" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="lp-hero-tag ty-hero-tag">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:-4px;margin-right:6px"><path d="M20 6L9 17l-5-5" stroke="#f1ec49" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Test Completato ·  Report in arrivo via email
+    </div>
+    <h1>Complimenti.<br>Il tuo <strong>Voice&nbsp;Leadership&nbsp;Scan</strong> è in arrivo.</h1>
+    <p class="hs">Hai fatto il primo passo reale verso una Voce più consapevole, autorevole e riconoscibile. Tra qualche minuto ti arriva via email il tuo <strong>Profilo di Comunicazione Vocale</strong> personalizzato.</p>
+
+    <a href="#prenota" class="btn">
+      <span class="cta-row">Prenota la Sessione gratuita<span class="eq"><i></i><i></i><i></i><i></i><i></i></span></span>
+      <span class="cta-micro">30 MIN · ZOOM · 10 POSTI AL MESE</span>
+    </a>
+  </div>
+
+  <div class="ty-hero-video">
+    <div class="ty-video-frame">
+      <iframe src="https://www.youtube.com/embed/N3yNzi3gE0s?rel=0&modestbranding=1" title="Gian Luca Caruso — La tua voce registrata" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="ty-video-cap">↑ Guarda il video prima di prenotare</p>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 2 — CHECK EMAIL white strip (#check-email)
+     Deliverability warning, pattern lp-bul white
+     ========================================================= -->
+<section id="check-email" class="ty-check-section">
+  <div class="w">
+    <div class="ty-check-grid">
+      <div class="ty-check-icon-lg">📧</div>
+      <div class="ty-check-body">
+        <h3>Controlla la tua casella email.</h3>
+        <p>Se non lo vedi entro 5 minuti, guarda anche in <strong>Promozioni</strong>, <strong>Spam</strong> o <strong>Aggiornamenti</strong>. Se lo trovi lì, <strong>segnalalo come "Non è spam"</strong> — così non perdi nessun messaggio futuro da parte mia.</p>
       </div>
-      <p class="ty-video-cap">Un messaggio per te mentre aspetti il Report ↑</p>
+      <div class="ty-check-stat">
+        <div class="ty-check-stat-num">5<small>min</small></div>
+        <div class="ty-check-stat-label">tempo arrivo<br>medio email</div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- =========================================================
-     SECTION 2 — OFFERTA + CALENDARIO GHL (#prenota)
+     SECTION 3 — OFFERTA CALL + CALENDARIO (#prenota)
+     Pattern lp-met: bg #0D1332, numeri gialli giganti, 2 col con card + calendar
      ========================================================= -->
 <section id="prenota" class="ty-offer">
   <div class="w">
     <p class="ty-eyebrow">SOLO PER CHI HA APPENA FATTO IL TEST</p>
-    <h2>Prenota la tua <em>Sessione Vocale 1:1</em><br>gratuita con me.</h2>
-    <p class="ty-offer-lead">Quando riceverai il Report, avrai davanti una <strong>radiografia precisa</strong> della tua Voce. Leggerla è una cosa, <strong>tradurla in azioni concrete</strong> è un'altra. Per questo riservo <strong>10 sessioni gratuite al mese</strong> a chi ha appena fatto il Test.</p>
+    <h2>Prenota la tua <em>Sessione Vocale&nbsp;1:1</em><br>gratuita con me.</h2>
+    <p class="ty-offer-lead">Quando riceverai il Report, avrai davanti una <strong>radiografia precisa</strong> della tua Voce. Leggerla è una cosa, <strong>tradurla in azioni concrete</strong> è un'altra. Per questo riservo <strong>10 sessioni gratuite al mese</strong> a chi ha appena completato il Test.</p>
+
+    <div class="ty-offer-stats">
+      <div class="ty-offer-stat"><div class="ty-offer-stat-num">10</div><div class="ty-offer-stat-label">Sessioni al mese</div></div>
+      <div class="ty-offer-stat"><div class="ty-offer-stat-num">30<small>min</small></div><div class="ty-offer-stat-label">Durata call</div></div>
+      <div class="ty-offer-stat"><div class="ty-offer-stat-num">0€</div><div class="ty-offer-stat-label">Zero investimento</div></div>
+      <div class="ty-offer-stat"><div class="ty-offer-stat-num">1:1</div><div class="ty-offer-stat-label">Direttamente con me</div></div>
+    </div>
 
     <div class="ty-offer-grid">
       <div class="ty-offer-info">
@@ -89,9 +115,15 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#bd1a1a" stroke-width="2" stroke-linecap="round"/></svg>
           <span><strong>Solo 10 sessioni al mese.</strong> Quando si esauriscono l'offerta chiude fino al mese successivo.</span>
         </div>
-        <p class="ty-guarantee">
-          <strong>Promessa personale:</strong> se alla fine della call non avrai ottenuto almeno uno spunto concreto che valga il tuo tempo, ti manderò in regalo la mia mini-guida <em>"5 errori vocali che trasmettono insicurezza"</em>.
-        </p>
+        <div class="ty-guarantee">
+          <div class="ty-guarantee-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M12 2l3 1 3-1 2 2-1 3 1 3-2 2-3-1-3 1-3-1-2-2 1-3-1-3 2-2z" stroke="#f1ec49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <strong>La mia promessa personale</strong>
+            <p>Se alla fine della call <em>non</em> avrai ottenuto almeno uno spunto concreto che valga il tuo tempo, ti regalo la mia mini-guida <em>"5 errori vocali che trasmettono insicurezza"</em>.</p>
+          </div>
+        </div>
       </div>
 
       <div class="ty-cal-wrap">
@@ -107,19 +139,19 @@
 </section>
 
 <!-- =========================================================
-     SECTION 3 — VIDEO TESTIMONIANZE YOUTUBE (#testimonianze)
-     6 video reali dal canale @corsodizionecarusospeaker
+     SECTION 4 — TESTIMONIANZE VIDEO (#testimonianze)
+     White section like lp-bul
      ========================================================= -->
 <section id="testimonianze" class="ty-reviews-v">
   <div class="w">
-    <p class="ty-eyebrow">+470 PERSONE HANNO GIÀ LAVORATO CON ME</p>
-    <h2>Sentilo dalle loro voci.</h2>
-    <p class="ty-reviews-lead">Persone reali che hanno trasformato la propria Voce con il metodo Voice Communication Hero. Manager, podcaster, coach, imprenditori, professionisti.</p>
+    <p class="ty-eyebrow ty-eyebrow--red">+470 PERSONE HANNO GIÀ LAVORATO CON ME</p>
+    <h2>Sentilo <em>dalle loro voci.</em></h2>
+    <p class="ty-reviews-lead">Manager, podcaster, coach, imprenditori, professionisti. Persone reali che hanno trasformato la propria Voce con il metodo <strong>Voice Communication Hero</strong>.</p>
 
     <div class="ty-reviews-grid">
       <div class="ty-review-v">
         <div class="ty-video-frame">
-          <iframe src="https://www.youtube.com/embed/cJgEwhlOrFc?rel=0&modestbranding=1" title="Testimonianza Gaetano — Sales Manager multinazionale" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/cJgEwhlOrFc?rel=0&modestbranding=1" title="Testimonianza Gaetano" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="ty-review-meta">
           <strong>Gaetano</strong>
@@ -128,7 +160,7 @@
       </div>
       <div class="ty-review-v">
         <div class="ty-video-frame">
-          <iframe src="https://www.youtube.com/embed/49TnFOpACQk?rel=0&modestbranding=1" title="Testimonianza Claudio — Sales Manager Lusso" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/49TnFOpACQk?rel=0&modestbranding=1" title="Testimonianza Claudio" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="ty-review-meta">
           <strong>Claudio</strong>
@@ -137,7 +169,7 @@
       </div>
       <div class="ty-review-v">
         <div class="ty-video-frame">
-          <iframe src="https://www.youtube.com/embed/RypH1m3egYQ?rel=0&modestbranding=1" title="Testimonianza Vanessa — Life Coach" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/RypH1m3egYQ?rel=0&modestbranding=1" title="Testimonianza Vanessa" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="ty-review-meta">
           <strong>Vanessa</strong>
@@ -146,7 +178,7 @@
       </div>
       <div class="ty-review-v">
         <div class="ty-video-frame">
-          <iframe src="https://www.youtube.com/embed/SAR9mVhjLfk?rel=0&modestbranding=1" title="Testimonianza Rita — Professionista" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/SAR9mVhjLfk?rel=0&modestbranding=1" title="Testimonianza Rita" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="ty-review-meta">
           <strong>Rita</strong>
@@ -155,7 +187,7 @@
       </div>
       <div class="ty-review-v">
         <div class="ty-video-frame">
-          <iframe src="https://www.youtube.com/embed/6Cq52ksRRI8?rel=0&modestbranding=1" title="Testimonianza Laura — Dizione e Audiolibri" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/6Cq52ksRRI8?rel=0&modestbranding=1" title="Testimonianza Laura" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="ty-review-meta">
           <strong>Laura</strong>
@@ -164,7 +196,7 @@
       </div>
       <div class="ty-review-v">
         <div class="ty-video-frame">
-          <iframe src="https://www.youtube.com/embed/ffx6o_Ye4_U?rel=0&modestbranding=1" title="Testimonianza Debora — Dizione Perfetta" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/ffx6o_Ye4_U?rel=0&modestbranding=1" title="Testimonianza Debora" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="ty-review-meta">
           <strong>Debora</strong>
@@ -176,19 +208,20 @@
 </section>
 
 <!-- =========================================================
-     SECTION 4 — TIMELINE 7 GIORNI (#prossimi-passi)
+     SECTION 5 — TIMELINE 7 GIORNI (#prossimi-passi)
+     Pattern lp-met: numeri gialli 108px giganti
      ========================================================= -->
 <section id="prossimi-passi" class="ty-timeline">
-  <div class="wn">
+  <div class="w">
     <p class="ty-eyebrow">COSA TI SUCCEDERÀ NEI PROSSIMI 7 GIORNI</p>
-    <h2>Il tuo percorso è appena iniziato.</h2>
+    <h2>Il tuo percorso è <em>appena iniziato.</em></h2>
 
     <div class="ty-steps">
       <div class="ty-step">
         <div class="ty-step-n">01</div>
         <div class="ty-step-body">
           <strong>Entro 5 minuti</strong>
-          <p>Ricevi via email il tuo <em>Voice Leadership Scan</em> completo.</p>
+          <p>Ricevi via email il tuo <em>Voice Leadership Scan</em> completo con analisi personalizzata.</p>
         </div>
       </div>
       <div class="ty-step">
@@ -214,38 +247,42 @@
       </div>
     </div>
 
-    <p class="ty-timeline-note tc">
-      <strong>Nel frattempo</strong> — <a href="#prenota">prenota ora la Sessione 1:1 ↑</a> e saltiamo subito al lavoro.
-    </p>
-  </div>
-</section>
-
-<!-- =========================================================
-     SECTION 5 — COMMUNITY (#community)
-     ========================================================= -->
-<section id="community" class="ty-community">
-  <div class="w">
-    <h2>Seguimi anche qui mentre aspetti il Report</h2>
-    <p>Ogni giorno pubblico consigli vocali, esercizi rapidi e retroscena da 30 anni di RAI, Discovery Channel e National Geographic.</p>
-    <div class="ty-socials">
-      <a href="https://www.instagram.com/gianlucacarusospeaker" target="_blank" rel="noopener" class="ty-social-btn">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#fafbff" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="#fafbff" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="#fafbff"/></svg>
-        <span>Instagram</span>
-      </a>
-      <a href="https://www.youtube.com/@corsodizionecarusospeaker" target="_blank" rel="noopener" class="ty-social-btn">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="#fafbff"><path d="M23 6s-.2-1.5-.8-2.2c-.8-.9-1.7-.9-2.1-.9C16.8 2.6 12 2.6 12 2.6s-4.8 0-8.1.3c-.4 0-1.3 0-2.1.9C1.2 4.5 1 6 1 6S.7 8 .7 10v1.8c0 2 .3 4 .3 4s.2 1.5.8 2.2c.8.9 1.9.9 2.4 1 1.7.2 7.8.3 7.8.3s4.8 0 8.1-.3c.4 0 1.3 0 2.1-.9.6-.7.8-2.2.8-2.2s.3-2 .3-4V10c0-2-.3-4-.3-4zM9.7 14.2V7.9l6.3 3.2-6.3 3.1z"/></svg>
-        <span>YouTube</span>
-      </a>
-      <a href="https://www.facebook.com/gianlucacarusospeaker" target="_blank" rel="noopener" class="ty-social-btn">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="#fafbff"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V8.9c0-.9.3-1.5 1.5-1.5h1.7V4.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3V14h2.7v8h3.5z"/></svg>
-        <span>Facebook</span>
+    <div class="ty-timeline-cta tc">
+      <p>Non vuoi aspettare?</p>
+      <a href="#prenota" class="btn">
+        <span class="cta-row">Prenota la Sessione gratuita ora<span class="eq"><i></i><i></i><i></i><i></i><i></i></span></span>
+        <span class="cta-micro">Gratis · 30 min · Zoom</span>
       </a>
     </div>
   </div>
 </section>
 
 <!-- =========================================================
-     SECTION 6 — FOOTER minimal
+     SECTION 6 — COMMUNITY (#community)
+     ========================================================= -->
+<section id="community" class="ty-community">
+  <div class="w">
+    <h2>Seguimi anche qui<br>mentre aspetti il Report.</h2>
+    <p>Ogni giorno pubblico consigli vocali, esercizi rapidi e retroscena da 30 anni di RAI, Discovery Channel e National Geographic.</p>
+    <div class="ty-socials">
+      <a href="https://www.instagram.com/caruso_business_vocal_coach/" target="_blank" rel="noopener" class="ty-social-btn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#fafbff" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="#fafbff" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="#fafbff"/></svg>
+        <span>Instagram</span>
+      </a>
+      <a href="https://www.tiktok.com/@caruso_vocal_coach" target="_blank" rel="noopener" class="ty-social-btn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#fafbff"><path d="M19.6 6.3c-1.3-.9-2.2-2.2-2.5-3.7-.1-.3-.1-.7-.1-1h-3.3v13.4c-.1 1.5-1.3 2.7-2.8 2.7-1.6 0-2.8-1.3-2.8-2.8 0-1.6 1.3-2.8 2.8-2.8.3 0 .6 0 .9.1V8.9c-.3 0-.6-.1-.9-.1-3.4 0-6.1 2.7-6.1 6.1s2.7 6.1 6.1 6.1 6.1-2.7 6.1-6.1V8.3c1.4 1 3 1.6 4.8 1.6v-3.3c-.9 0-1.7-.2-2.2-.3z"/></svg>
+        <span>TikTok</span>
+      </a>
+      <a href="https://www.youtube.com/@corsodizionecarusospeaker" target="_blank" rel="noopener" class="ty-social-btn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#fafbff"><path d="M23 6s-.2-1.5-.8-2.2c-.8-.9-1.7-.9-2.1-.9C16.8 2.6 12 2.6 12 2.6s-4.8 0-8.1.3c-.4 0-1.3 0-2.1.9C1.2 4.5 1 6 1 6S.7 8 .7 10v1.8c0 2 .3 4 .3 4s.2 1.5.8 2.2c.8.9 1.9.9 2.4 1 1.7.2 7.8.3 7.8.3s4.8 0 8.1-.3c.4 0 1.3 0 2.1-.9.6-.7.8-2.2.8-2.2s.3-2 .3-4V10c0-2-.3-4-.3-4zM9.7 14.2V7.9l6.3 3.2-6.3 3.1z"/></svg>
+        <span>YouTube</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 7 — FOOTER minimal
      ========================================================= -->
 <footer class="ty-footer">
   <div class="w tc">
