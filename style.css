@@ -887,18 +887,14 @@ img,video{max-width:100%;height:auto}
 /* Voice Actor photo: object-position custom (subject centered, faccia visibile) */
 .lp-card:nth-child(2) .lp-card-img img{object-fit:cover;object-position:60% 30%}
 
-/* Cutout photos (PNG scontornate): contain + ancorate in basso, ingrandite */
-.lp-card-img--cutout{overflow:hidden}
+/* Cutout photos (PNG scontornate): in alto, contain, sopra il gradient bg */
+.lp-card-img--cutout{z-index:2!important;bottom:auto!important;height:78%!important}
 .lp-card-img--cutout img{
-  width:100%!important;height:92%!important;
-  object-fit:contain!important;object-position:bottom center!important;
-  bottom:0!important;right:auto!important;left:0!important;top:auto!important;
-  filter:drop-shadow(0 18px 30px rgba(0,0,0,.25));
+  width:100%!important;height:100%!important;
+  object-fit:contain!important;object-position:top center!important;
+  top:0!important;bottom:auto!important;right:auto!important;left:0!important;
+  filter:drop-shadow(0 14px 28px rgba(0,0,0,.28));
 }
-.lp-card:nth-child(1) .lp-card-img--cutout img{height:96%!important;transform:translateX(4%)}
-.lp-card:nth-child(3) .lp-card-img--cutout img{height:88%!important;filter:drop-shadow(0 18px 30px rgba(0,0,0,.18))}
 @media(max-width:768px){
-  .lp-card-img--cutout img{height:78%!important}
-  .lp-card:nth-child(1) .lp-card-img--cutout img{height:82%!important;transform:none}
-  .lp-card:nth-child(3) .lp-card-img--cutout img{height:74%!important}
+  .lp-card-img--cutout{height:62%!important}
 }
