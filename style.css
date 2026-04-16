@@ -903,12 +903,9 @@ img,video{max-width:100%;height:auto}
   top:0!important;left:0!important;right:auto!important;bottom:auto!important;
   filter:drop-shadow(0 14px 24px rgba(0,0,0,.25));
 }
-/* Voice Actor: box full card + ancora al bottom per incollare foto alla base */
-.lp-card:nth-child(2) .lp-card-img--cutout{
-  top:0!important;
-}
+/* Voice Actor: stesso layout delle altre card (canvas img ora portrait) */
 .lp-card:nth-child(2) .lp-card-img--cutout img{
-  object-position:45% bottom!important;
+  object-position:45% top!important;
 }
 @media(max-width:768px){
   .lp-card-img--cutout{top:76px!important}
