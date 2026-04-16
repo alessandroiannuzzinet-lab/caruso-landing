@@ -912,5 +912,5 @@ img,video{max-width:100%;height:auto}
 }
 @media(max-width:768px){
   .lp-card-img--cutout{top:76px!important}
-  .lp-card:nth-child(3) .lp-card-img--cutout img{transform:translateX(14%)!important}
+  .lp-card:nth-child(3) .lp-card-img--cutout img{transform:translateX(14%) scale(1.2)!important;transform-origin:50% 0%!important}
 }
