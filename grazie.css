@@ -77,6 +77,32 @@
 }
 .ty-video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
 
+/* ============ ROUTING CLIENT-SIDE (HT / Downsell) ============ */
+.ty-routing{padding:40px 48px 0}
+.ty-routing-card{
+  background:#fafbff;color:#0D1332;
+  border-radius:24px;
+  padding:36px 40px;
+  max-width:1200px;margin:0 auto;
+  text-align:center;
+  box-shadow:0 14px 40px rgba(0,0,0,.25);
+}
+.ty-routing-card--ht{border:2px solid #f1ec49}
+.ty-routing-badge{
+  display:inline-block;padding:6px 16px;border-radius:100px;
+  background:#142471;color:#f1ec49;
+  font-size:13px;font-weight:600;letter-spacing:.08em;
+  margin-bottom:18px;
+}
+.ty-routing-card h2{color:#0D1332!important;margin:0 0 14px;font-size:clamp(24px,3vw,32px)!important;max-width:720px;margin-left:auto;margin-right:auto}
+.ty-routing-card p{font-size:17px;line-height:1.65;color:#374151;font-weight:300;margin:0;max-width:680px;margin-left:auto;margin-right:auto}
+.ty-routing-card p strong{color:#0D1332;font-weight:600}
+@media(max-width:768px){
+  .ty-routing{padding:28px 20px 0}
+  .ty-routing-card{padding:28px 24px}
+  .ty-routing-card p{font-size:16px}
+}
+
 /* ============ SECTION 2 — CHECK EMAIL (white section) ============ */
 .ty-check-section{
   background:#fafbff;color:#0D1332;

@@ -71,6 +71,51 @@
 </section>
 
 <!-- =========================================================
+     ROUTING CLIENT-SIDE (?b= budget answer dal quiz GHL)
+     #content-ht = lead high-ticket (risposta "Sì"/"si")
+     #content-downsell = lead downsell (default / altre risposte / missing)
+     ========================================================= -->
+<section id="content-ht" class="ty-routing" style="display:none">
+  <div class="w">
+    <div class="ty-routing-card ty-routing-card--ht">
+      <div class="ty-routing-badge">🎯 Alta priorità</div>
+      <h2>Grazie! Ho ricevuto le tue risposte.</h2>
+      <p>Ti sto inviando un'email con il tuo <strong>Report Vocale personalizzato</strong>. Controlla la tua casella (anche Spam o Promozioni). <strong>A breve ti contatterò personalmente</strong> per la tua Video Consulenza Vocale Personalizzata.</p>
+    </div>
+  </div>
+</section>
+
+<section id="content-downsell" class="ty-routing" style="display:none">
+  <div class="w">
+    <div class="ty-routing-card ty-routing-card--downsell">
+      <h2>Grazie! Ho ricevuto le tue risposte.</h2>
+      <p>Ti sto inviando un'email con il tuo <strong>Report Vocale personalizzato</strong>. Controlla la tua casella (anche Spam o Promozioni) per leggerlo e <strong>scoprire la soluzione che fa per te</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var params = new URLSearchParams(window.location.search);
+    var budget = (params.get('b') || '').toLowerCase();
+    var isHighTicket = budget.indexOf('sì') !== -1
+      || budget === 'si'
+      || budget.indexOf('si ') === 0
+      || budget.indexOf('si,') === 0
+      || budget.indexOf('si ') !== -1 && budget.indexOf('si ') < 3;
+    var ht = document.getElementById('content-ht');
+    var ds = document.getElementById('content-downsell');
+    if (isHighTicket) {
+      ht.style.display = 'block';
+      ds.style.display = 'none';
+    } else {
+      ht.style.display = 'none';
+      ds.style.display = 'block';
+    }
+  });
+</script>
+
+<!-- =========================================================
      SECTION 2 — CHECK EMAIL white strip (#check-email)
      Deliverability warning, pattern lp-bul white
      ========================================================= -->
