@@ -98,6 +98,20 @@
 .ty-offer-stat-num small{font-size:18px;color:rgba(241,236,73,.7);margin-left:3px;font-weight:500}
 .ty-offer-stat-label{font-size:12px;color:rgba(255,255,255,.65);margin-top:8px;letter-spacing:.05em;text-transform:uppercase}
 
+/* Trust banner — rassicura NO vendita */
+.ty-trust-banner{
+  display:flex;gap:18px;align-items:flex-start;
+  max-width:900px;margin:0 auto 48px;
+  background:linear-gradient(135deg,rgba(241,236,73,.1) 0%,rgba(241,236,73,.04) 100%);
+  border:1.5px solid rgba(241,236,73,.3);
+  border-radius:18px;padding:22px 26px;
+}
+.ty-trust-banner-icon{flex-shrink:0;width:52px;height:52px;background:rgba(241,236,73,.15);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.ty-trust-banner-body strong{display:block;font-size:18px;font-weight:700;color:#f1ec49;margin-bottom:8px;letter-spacing:-.005em}
+.ty-trust-banner-body p{font-size:15px;line-height:1.6;color:rgba(255,255,255,.88);font-weight:300;margin:0}
+.ty-trust-banner-body strong + p strong{font-weight:600;color:#fafbff}
+.ty-trust-banner-body em{font-style:italic;color:#f1ec49;font-weight:400}
+
 /* 2 colonne info + calendario */
 .ty-offer-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:36px;align-items:start}
 
