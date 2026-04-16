@@ -9,43 +9,46 @@
 .ty .btn .cta-micro{display:block;font-size:11px;font-weight:600;letter-spacing:.12em;color:rgba(13,19,50,.6);margin-top:6px;text-transform:uppercase}
 .ty .btn{flex-direction:column;align-items:flex-start;padding:14px 30px!important}
 
-/* ============ SECTION 1 — HERO ============ */
+/* ============ SECTION 1 — HERO (grid-areas) ============ */
 .ty-hero{
   min-height:auto!important;
   display:grid!important;
-  grid-template-columns:1fr 1.1fr;
-  gap:48px;align-items:center;
+  grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);
+  grid-template-rows:auto auto auto auto;
+  grid-template-areas:
+    "tag    video"
+    "h1     video"
+    "sub    video"
+    "cta    video";
+  column-gap:48px;row-gap:0;
+  align-items:start;
   padding:56px 56px!important;
 }
-.ty-hero .ty-hero-content{
-  padding:0;max-width:none;margin:0!important;
-  position:relative;z-index:2;
-}
+.ty-hero .ty-hero-tag{grid-area:tag;margin-bottom:22px;justify-self:start;align-self:end}
+.ty-hero .ty-hero-h1{grid-area:h1;margin-bottom:20px}
+.ty-hero .ty-hero-sub{grid-area:sub;margin-bottom:28px}
+.ty-hero-video{grid-area:video;align-self:center}
+.ty-hero-cta{grid-area:cta;justify-self:start;align-self:start}
+
 .ty-hero .ty-hero-tag{
   font-size:15px!important;padding:11px 22px!important;
   display:inline-flex!important;align-items:center;gap:4px;
   background:rgba(241,236,73,.14)!important;
   border:1.5px solid rgba(241,236,73,.32);
   white-space:normal!important;line-height:1.3;
-  margin-bottom:22px;
 }
-.ty-hero h1{margin-bottom:20px;color:#fafbff;font-weight:500;line-height:1.1;font-size:clamp(30px,3.8vw,48px)!important}
-.ty-hero h1 strong{color:#f1ec49;font-weight:700!important;white-space:nowrap}
-.ty-hero .hs{font-size:clamp(15px,1.6vw,18px);line-height:1.65;color:rgba(255,255,255,.82);margin-bottom:0;font-weight:300}
-.ty-hero .hs strong{color:#fafbff;font-weight:500}
+.ty-hero .ty-hero-h1{color:#fafbff;font-weight:500;line-height:1.1;font-size:clamp(30px,3.8vw,48px)!important}
+.ty-hero .ty-hero-h1 strong{color:#f1ec49;font-weight:700!important}
+.ty-hero .ty-hero-sub{font-size:clamp(15px,1.5vw,18px);line-height:1.65;color:rgba(255,255,255,.82);font-weight:300}
+.ty-hero .ty-hero-sub strong{color:#fafbff;font-weight:500}
 
-/* Video col dx + CTA sotto */
-.ty-hero-video{display:flex;flex-direction:column;align-items:center;gap:22px}
+.ty-hero-video{width:100%}
 .ty-video-frame{
   width:100%;position:relative;aspect-ratio:16/9;
   border-radius:20px;overflow:hidden;background:#000;
-  box-shadow:0 30px 70px rgba(0,0,0,.55), 0 0 0 3px rgba(241,236,73,.18);
+  box-shadow:0 24px 56px rgba(0,0,0,.4);
 }
 .ty-video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
-.ty-video-cap{font-size:13px;color:rgba(255,255,255,.7);text-align:center;font-weight:500;margin:0}
-
-/* CTA sotto video */
-.ty-hero-cta{align-self:center}
 
 /* ============ SECTION 2 — CHECK EMAIL (white strip) ============ */
 .ty-check-section{
@@ -247,17 +250,25 @@
    RESPONSIVE — 3 breakpoint (tablet, mobile, small)
    ========================================================= */
 
-/* Tablet ≤1024px — hero 1 col (video sopra, copy sotto, CTA sotto video) */
+/* Tablet ≤1024px — hero 1 col: tag → h1 → sub → video → CTA */
 @media(max-width:1024px){
   .ty-hero{
     grid-template-columns:1fr!important;
-    gap:32px!important;
+    grid-template-areas:
+      "tag"
+      "h1"
+      "sub"
+      "video"
+      "cta"!important;
+    column-gap:0!important;row-gap:0!important;
     padding:44px 36px!important;
   }
-  .ty-hero-video{order:-1}
-  .ty-hero .ty-hero-content{text-align:center}
-  .ty-hero h1{max-width:620px;margin-left:auto;margin-right:auto;margin-bottom:18px}
-  .ty-hero .hs{max-width:620px;margin-left:auto;margin-right:auto}
+  .ty-hero .ty-hero-tag{justify-self:center;margin-bottom:18px}
+  .ty-hero .ty-hero-h1,.ty-hero .ty-hero-sub{text-align:center;max-width:640px;margin-left:auto;margin-right:auto}
+  .ty-hero .ty-hero-h1{margin-bottom:14px}
+  .ty-hero .ty-hero-sub{margin-bottom:28px}
+  .ty-hero-video{margin-bottom:24px}
+  .ty-hero-cta{justify-self:center;align-self:center}
 
   .ty-offer,.ty-reviews-v,.ty-timeline,.ty-community{padding:64px 36px}
   .ty-offer-grid{grid-template-columns:1fr;gap:28px}
@@ -277,12 +288,12 @@
   .ty-header{padding:14px 20px}
   .ty-header .lp-header-logo img{height:36px}
 
-  .ty-hero{padding:36px 24px!important;margin:12px;gap:26px!important}
+  .ty-hero{padding:32px 20px!important;margin:12px}
   .ty-hero .ty-hero-tag{font-size:13px!important;padding:9px 16px!important;line-height:1.35}
-  .ty-hero h1{font-size:clamp(26px,6.5vw,36px)!important;margin-bottom:14px}
-  .ty-hero .hs{font-size:15px}
-  .ty-video-frame{border-radius:16px;box-shadow:0 16px 40px rgba(0,0,0,.5), 0 0 0 2px rgba(241,236,73,.18)}
-  .ty-video-cap{font-size:12px}
+  .ty-hero .ty-hero-h1{font-size:clamp(26px,6.5vw,36px)!important;margin-bottom:12px}
+  .ty-hero .ty-hero-sub{font-size:15px;margin-bottom:22px}
+  .ty-video-frame{border-radius:14px;box-shadow:0 14px 30px rgba(0,0,0,.35)}
+  .ty-hero-video{margin-bottom:20px}
   .ty .btn{font-size:16px!important;padding:12px 24px!important;width:100%;justify-content:center!important;align-items:center!important}
   .ty .btn .cta-row{justify-content:center}
   .ty .btn .cta-micro{text-align:center}
@@ -335,8 +346,8 @@
 
 /* Small mobile ≤420px */
 @media(max-width:420px){
-  .ty-hero{padding:28px 18px!important;margin:10px}
-  .ty-hero h1{font-size:26px!important}
+  .ty-hero{padding:26px 16px!important;margin:10px}
+  .ty-hero .ty-hero-h1{font-size:25px!important}
   .ty-hero .ty-hero-tag{font-size:12px!important;padding:8px 14px!important}
   .ty-offer,.ty-reviews-v,.ty-timeline,.ty-community,.ty-check-section{padding-left:18px;padding-right:18px;margin:10px}
   .ty-offer-info,.ty-step{padding:20px 18px}
