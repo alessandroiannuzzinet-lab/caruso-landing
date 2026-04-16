@@ -321,9 +321,9 @@
   .ty-hero-video{margin-bottom:22px}
   .ty-video-frame{border-radius:16px;box-shadow:0 14px 30px rgba(0,0,0,.35)}
 
-  .ty .btn{width:100%;padding:11px 28px!important}
-  .ty .btn .cta-row{font-size:20px}
-  .ty .btn .cta-micro{font-size:10px;letter-spacing:.12em}
+  .ty .btn{width:100%;padding:11px 28px!important;text-align:center!important;justify-content:center!important}
+  .ty .btn .cta-row{font-size:20px;justify-content:center;width:100%}
+  .ty .btn .cta-micro{font-size:10px;letter-spacing:.12em;text-align:center;width:100%}
 
   .ty-check-section{padding:28px 22px;margin:12px}
   .ty-check-grid{grid-template-columns:1fr;gap:20px;text-align:center}
