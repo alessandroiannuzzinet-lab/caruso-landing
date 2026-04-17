@@ -353,8 +353,12 @@
     var h = Math.floor(remaining / 3600000);
     var m = Math.floor((remaining % 3600000) / 60000);
     var s = Math.floor((remaining % 60000) / 1000);
-    var txt = h.toString().padStart(2,'0') + ':' + m.toString().padStart(2,'0') + ':' + s.toString().padStart(2,'0');
-    document.querySelectorAll('[data-countdown]').forEach(function(el){ el.textContent = txt; });
+    var txt = '<span class="dz-cd-num">' + h.toString().padStart(2,'0') + '</span><span class="dz-cd-unit">ore</span>'
+            + '<span class="dz-cd-sep">:</span>'
+            + '<span class="dz-cd-num">' + m.toString().padStart(2,'0') + '</span><span class="dz-cd-unit">min</span>'
+            + '<span class="dz-cd-sep">:</span>'
+            + '<span class="dz-cd-num">' + s.toString().padStart(2,'0') + '</span><span class="dz-cd-unit">sec</span>';
+    document.querySelectorAll('[data-countdown]').forEach(function(el){ el.innerHTML = txt; });
   }
 
   updateCountdown();
