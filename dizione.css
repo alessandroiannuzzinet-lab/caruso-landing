@@ -126,6 +126,67 @@
 }
 .dz-include-card em{color:#f1ec49;font-style:italic;font-weight:400}
 
+/* ============ COUNTDOWN TIMER ============ */
+.dz-countdown-wrap{
+  margin-bottom:22px;text-align:center;
+}
+.dz-countdown-label{
+  font-size:13px!important;font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;color:rgba(255,255,255,.7);margin:0 0 8px;
+}
+.dz-countdown{
+  display:inline-block;
+  font-size:40px;font-weight:700;color:#bd1a1a;
+  font-variant-numeric:tabular-nums;letter-spacing:.04em;
+  background:rgba(189,26,26,.12);border:1.5px solid rgba(189,26,26,.4);
+  border-radius:14px;padding:10px 28px;line-height:1;
+}
+.dz-countdown--lg{
+  font-size:52px;padding:14px 36px;
+}
+.dz-countdown-wrap--card{margin-bottom:28px}
+
+/* ============ STICKY BAR COUNTDOWN (bottom) ============ */
+.dz-stickybar{
+  position:fixed;bottom:0;left:0;right:0;z-index:9990;
+  background:#0D1332;border-top:2px solid #bd1a1a;
+  transform:translateY(100%);transition:transform .4s ease;
+  padding:12px 24px;
+}
+.dz-stickybar.is-visible{transform:translateY(0)}
+.dz-stickybar-inner{
+  max-width:1140px;margin:0 auto;
+  display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;
+}
+.dz-stickybar-timer{
+  display:flex;align-items:center;gap:8px;
+  font-size:20px;font-weight:700;color:#bd1a1a;
+  font-variant-numeric:tabular-nums;
+}
+.dz-stickybar-text{
+  font-size:15px;font-weight:300;color:rgba(255,255,255,.8);
+}
+.dz-stickybar-text strong{color:#f1ec49;font-weight:700;font-size:18px}
+.dz-stickybar-cta{
+  display:inline-block;padding:10px 24px;
+  border-radius:100px;background:#f1ec49;color:#0D1332;
+  font-size:15px;font-weight:700;text-decoration:none;
+  transition:all .3s;letter-spacing:.02em;
+}
+.dz-stickybar-cta:hover{background:#fafbff;transform:translateY(-1px)}
+
+@media(max-width:768px){
+  .dz-countdown{font-size:30px;padding:8px 22px}
+  .dz-countdown--lg{font-size:38px;padding:10px 26px}
+  .dz-stickybar-inner{gap:12px}
+  .dz-stickybar-timer{font-size:17px}
+  .dz-stickybar-text{font-size:13px}
+}
+@media(max-width:420px){
+  .dz-countdown{font-size:26px;padding:8px 18px}
+  .dz-countdown--lg{font-size:32px}
+}
+
 /* ============ PER CHI È / NON È ============ */
 .dz-forwho{
   background:#fafbff;color:#0D1332;

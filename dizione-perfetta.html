@@ -66,6 +66,10 @@
   </div>
 
   <div class="dz-hero-cta-block">
+    <div class="dz-countdown-wrap" id="countdown-hero">
+      <p class="dz-countdown-label">Questa offerta scade tra:</p>
+      <div class="dz-countdown"><span data-countdown>--:--:--</span></div>
+    </div>
     <div class="dz-price-row">
       <span class="dz-price-strike">197€</span>
       <span class="dz-price-now"><span data-price>67€</span></span>
@@ -176,6 +180,10 @@
 
     <div class="dz-pricing-card">
       <div class="dz-pricing-head">
+        <div class="dz-countdown-wrap dz-countdown-wrap--card" id="countdown-pricing">
+          <p class="dz-countdown-label">Offerta riservata — scade tra:</p>
+          <div class="dz-countdown dz-countdown--lg"><span data-countdown>--:--:--</span></div>
+        </div>
         <div class="dz-tag">DIZIONE PERFETTA · ACCESSO A VITA</div>
         <div class="dz-price-big-row">
           <span class="dz-price-strike-lg">197€</span>
@@ -271,6 +279,20 @@
 </section>
 
 <!-- =========================================================
+     STICKY BAR COUNTDOWN (bottom)
+     ========================================================= -->
+<div class="dz-stickybar" id="dz-stickybar">
+  <div class="dz-stickybar-inner">
+    <div class="dz-stickybar-timer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="vertical-align:-2px"><path d="M12 8v4l3 3M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#bd1a1a" stroke-width="2" stroke-linecap="round"/></svg>
+      <span data-countdown>--:--:--</span>
+    </div>
+    <span class="dz-stickybar-text">Offerta esclusiva ~~197€~~ <strong data-price>67€</strong></span>
+    <a href="#acquista" class="dz-stickybar-cta">Accedi ora</a>
+  </div>
+</div>
+
+<!-- =========================================================
      FOOTER
      ========================================================= -->
 <footer class="ty-footer">
@@ -313,6 +335,38 @@
   document.querySelectorAll('[data-discount]').forEach(function(el){el.textContent = cfg.discount});
   // Sostituisci Stripe link
   document.querySelectorAll('[data-stripe-link]').forEach(function(a){a.setAttribute('href', cfg.stripe)});
+
+  // ========== DEADLINE FUNNEL 48h ==========
+  // Se non c'è deadline (utente arrivato diretto senza passare dalla thank you), la settiamo qui
+  if (!localStorage.getItem('dz_deadline')) {
+    localStorage.setItem('dz_deadline', String(Date.now() + 48 * 60 * 60 * 1000));
+  }
+
+  var deadline = parseInt(localStorage.getItem('dz_deadline'));
+
+  function updateCountdown() {
+    var remaining = deadline - Date.now();
+    if (remaining <= 0) {
+      window.location.href = '/offerta-scaduta';
+      return;
+    }
+    var h = Math.floor(remaining / 3600000);
+    var m = Math.floor((remaining % 3600000) / 60000);
+    var s = Math.floor((remaining % 60000) / 1000);
+    var txt = h.toString().padStart(2,'0') + ':' + m.toString().padStart(2,'0') + ':' + s.toString().padStart(2,'0');
+    document.querySelectorAll('[data-countdown]').forEach(function(el){ el.textContent = txt; });
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // Sticky bar: mostra dopo scroll 400px
+  var stickybar = document.getElementById('dz-stickybar');
+  if (stickybar) {
+    window.addEventListener('scroll', function(){
+      stickybar.classList.toggle('is-visible', window.scrollY > 400);
+    });
+  }
 
   // Tracking
   window.dataLayer = window.dataLayer || [];
