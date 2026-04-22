@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T3FJHKX');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dizione Perfetta — Il Corso di Gian Luca Caruso | Offerta esclusiva</title>
@@ -15,6 +18,13 @@
   <link rel="stylesheet" href="grazie.css">
   <link rel="stylesheet" href="dizione.css">
 
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELXGL2JC0B"></script>
+  <script>
+  window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+  gtag('js',new Date());gtag('config','G-ELXGL2JC0B');
+  </script>
+
   <!-- Meta Pixel + ViewContent -->
   <script>
   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -23,12 +33,16 @@
   t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
   document,'script','https://connect.facebook.net/en_US/fbevents.js');
   fbq('init','1026701345130319');
+  fbq('init','4583746358576056');
   fbq('track','PageView');
   fbq('track','ViewContent',{content_name:'Dizione Perfetta',content_category:'corso_dizione',content_type:'product'});
   </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1026701345130319&ev=PageView&noscript=1"/></noscript>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4583746358576056&ev=PageView&noscript=1"/></noscript>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3FJHKX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -201,7 +215,7 @@
         <li>Live mensili con Gian Luca</li>
       </ul>
 
-      <a href="https://buy.stripe.com/PLACEHOLDER_A" class="btn dz-cta-primary" data-cta="pricing-main" data-stripe-link>
+      <a href="https://caruso-voice-communication-leaders.circle.so/checkout/video-corso-dizione-perfetta-metodo-prof-caruso-speaker" class="btn dz-cta-primary" data-cta="pricing-main">
         <span class="cta-row">Accedi ora al Corso<span class="eq"><i></i><i></i><i></i><i></i><i></i></span></span>
         <span class="cta-micro">Pagamento unico sicuro · Accesso Circle immediato</span>
       </a>
@@ -269,7 +283,7 @@
         <span class="dz-price-strike">197€</span>
         <span class="dz-price-now"><span data-price>67€</span></span>
       </div>
-      <a href="https://buy.stripe.com/PLACEHOLDER_A" class="btn dz-cta-primary" data-cta="final" data-stripe-link>
+      <a href="https://caruso-voice-communication-leaders.circle.so/checkout/video-corso-dizione-perfetta-metodo-prof-caruso-speaker" class="btn dz-cta-primary" data-cta="final">
         <span class="cta-row">Voglio accedere al Corso<span class="eq"><i></i><i></i><i></i><i></i><i></i></span></span>
         <span class="cta-micro">Offerta esclusiva · Garanzia 30 giorni</span>
       </a>
@@ -311,30 +325,12 @@
      ========================================================= -->
 <script>
 (function(){
-  // TODO GLC: sostituire con link Stripe Payment reali
-  var CONFIG = {
-    A: {price:'67€', discount:'66', stripe:'https://buy.stripe.com/PLACEHOLDER_A', value:67},
-    B: {price:'97€', discount:'51', stripe:'https://buy.stripe.com/PLACEHOLDER_B', value:97}
-  };
-
-  function pickVariant(){
-    var url = new URLSearchParams(window.location.search).get('v');
-    if (url === 'A' || url === 'B') return url;
-    var saved = localStorage.getItem('dz_variant');
-    if (saved === 'A' || saved === 'B') return saved;
-    var v = Math.random() < 0.5 ? 'A' : 'B';
-    localStorage.setItem('dz_variant', v);
-    return v;
-  }
-
-  var v = pickVariant();
-  var cfg = CONFIG[v];
+  var cfg = {price:'77€', discount:'61', value:77};
+  var v = 'A';
 
   // Popola prezzi
   document.querySelectorAll('[data-price]').forEach(function(el){el.textContent = cfg.price});
   document.querySelectorAll('[data-discount]').forEach(function(el){el.textContent = cfg.discount});
-  // Sostituisci Stripe link
-  document.querySelectorAll('[data-stripe-link]').forEach(function(a){a.setAttribute('href', cfg.stripe)});
 
   // ========== DEADLINE FUNNEL 48h ==========
   // Se non c'è deadline (utente arrivato diretto senza passare dalla thank you), la settiamo qui
